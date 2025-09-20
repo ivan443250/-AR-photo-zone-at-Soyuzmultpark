@@ -1,0 +1,1 @@
+# -AR-photo-zone-at-Soyuzmultpark
