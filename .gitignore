@@ -1,8 +1,17 @@
 # Игнорировать всё
 TestARZappar/**
+TestWebXR/**
 
 # Но не игнорировать папку Assets/WebGLBuild
 !README.md
+
+!TestWebXR/WebBuild/
+!TestWebXR/WebBuild/**
+!TestWebXR/Assets/
+!TestWebXR/Assets/Samples/
+!TestWebXR/Assets/Samples/**
+!TestWebXR/Assets/_Project/
+!TestWebXR/Assets/_Project/**
 
 !TestARZappar/
 !TestARZappar/Assets/
