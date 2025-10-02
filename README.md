@@ -8,9 +8,15 @@
 
 * **Frontend**
   * [React](https://reactjs.org/) - базовый фреймворк
-  * [TypeScript](https://www.typescriptlang.org/) / JavaScript - языки программирования
+  * [TypeScript](https://www.typescriptlang.org/) / JavaScript / C# (Unity build) - языки программирования
 * **Стили:**
   * [CSS3](https://developer.mozilla.org/ru/docs/Web/CSS) - таблицы стилей
 * **AR**
   * [AR MIXAR](https://editor.mix-ar.ru/) - основной редактор и фреймворк для создания AR-сцен
-  * [Unity WebGL Build] - Внутрениий инструмент, используемый AR редактором
+  * [Unity WebGL Build](https://docs.unity3d.com/560/Documentation/Manual/webgl-gettingstarted.html) - Внутрениий инструмент, используемый AR редактором
+
+
+
+## Хост
+
+В данный момент хостинг приложения на работает на сайте MIXAR. [Ссылка на приложение](https://xr.mix-ar.ru/q?id=3360)
