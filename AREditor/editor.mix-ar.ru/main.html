@@ -1,0 +1,3106 @@
+<!doctype html>
+<!--<html lang="en" data-layout="horizontal" data-sidebar="light" data-sidebar-size="lg">-->
+<html lang="en" data-layout="horizontal" data-sidebar="light"  data-layout-mode="light"  data-topbar="light" data-sidebar-size="lg">
+
+<!-- Mirrored from editor.mix-ar.ru/main.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Oct 2025 15:56:27 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>MIXAR WEB (Проекты)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="WebAR Constructor" name="description" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+
+    <!--<script
+            src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- dropzone css -->
+    <link rel="stylesheet" href="assets/libs/dropzone/dropzone.css" type="text/css" />
+    <!--<link href="assets/css/editor.css" rel="stylesheet" type="text/css" />-->
+
+    <!-- Filepond css -->
+    <link rel="stylesheet" href="assets/libs/filepond/filepond.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/lesson.css">
+
+    <style>
+        /*@media (min-width: 1024.1px) {
+            [data-layout=horizontal] .page-content {
+                margin-top: 20px;
+            }
+        }*/
+    </style>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(97630149, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/97630149" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="main.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="main.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo_dark.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo_dark.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                    id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- App Search-->
+                <form class="app-search d-none d-md-block" style="display: none !important">
+                    <div class="position-relative">
+                        <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                            id="search-options" value="">
+                        <span class="mdi mdi-magnify search-widget-icon"></span>
+                        <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                            id="search-close-options"></span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
+                        <div data-simplebar style="max-height: 320px;">
+                            <!-- item-->
+                            <div class="dropdown-header">
+                                <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
+                            </div>
+
+                            <div class="dropdown-item bg-transparent text-wrap">
+                                <a href="main.html" class="btn btn-soft-secondary btn-sm btn-rounded">how to setup <i
+                                        class="mdi mdi-magnify ms-1"></i></a>
+                                <a href="main.html" class="btn btn-soft-secondary btn-sm btn-rounded">buttons <i
+                                        class="mdi mdi-magnify ms-1"></i></a>
+                            </div>
+                            <!-- item-->
+                            <div class="dropdown-header mt-2">
+                                <h6 class="text-overflow text-muted mb-1 text-uppercase">Pages</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"></i>
+                                <span>Analytics Dashboard</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></i>
+                                <span>Help Center</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-user-settings-line align-middle fs-18 text-muted me-2"></i>
+                                <span>My account settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <div class="dropdown-header mt-2">
+                                <h6 class="text-overflow text-muted mb-2 text-uppercase">Members</h6>
+                            </div>
+
+                            <div class="notification-list">
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-2.jpg"
+                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-1">
+                                            <h6 class="m-0">Angela Bernier</h6>
+                                            <span class="fs-11 mb-0 text-muted">Manager</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-3.jpg"
+                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-1">
+                                            <h6 class="m-0">David Grasso</h6>
+                                            <span class="fs-11 mb-0 text-muted">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-5.jpg"
+                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-1">
+                                            <h6 class="m-0">Mike Bunch</h6>
+                                            <span class="fs-11 mb-0 text-muted">React Developer</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-3 pb-1">
+                            <a href="pages-search-results.html" class="btn btn-primary btn-sm">View All Results <i
+                                    class="ri-arrow-right-line ms-1"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                        id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="bx bx-search fs-22"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..."
+                                        aria-label="Recipient's username">
+                                    <button class="btn btn-primary" type="submit"><i
+                                            class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+               <!-- <div class="dropdown ms-1 topbar-head-dropdown header-item">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img id="header-lang-img" src="assets/images/flags/us.svg" alt="Header Language" height="20"
+                            class="rounded">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+
+                        &lt;!&ndash; item&ndash;&gt;
+                        <a href="javascript:void(0);" class="dropdown-item notify-item language py-2" data-lang="en"
+                            title="English">
+                            <img src="assets/images/flags/us.svg" alt="user-image" class="me-2 rounded" height="18">
+                            <span class="align-middle">English</span>
+                        </a>
+
+                        &lt;!&ndash; item&ndash;&gt;
+                        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp"
+                            title="Spanish">
+                            <img src="assets/images/flags/spain.svg" alt="user-image" class="me-2 rounded" height="18">
+                            <span class="align-middle">Española</span>
+                        </a>
+
+                        &lt;!&ndash; item&ndash;&gt;
+                        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr"
+                            title="German">
+                            <img src="assets/images/flags/germany.svg" alt="user-image" class="me-2 rounded"
+                                height="18"> <span class="align-middle">Deutsche</span>
+                        </a>
+
+                        &lt;!&ndash; item&ndash;&gt;
+                        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it"
+                            title="Italian">
+                            <img src="assets/images/flags/italy.svg" alt="user-image" class="me-2 rounded" height="18">
+                            <span class="align-middle">Italiana</span>
+                        </a>
+
+                        &lt;!&ndash; item&ndash;&gt;
+                        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru"
+                            title="Russian">
+                            <img src="assets/images/flags/russia.svg" alt="user-image" class="me-2 rounded" height="18">
+                            <span class="align-middle">русский</span>
+                        </a>
+
+                        &lt;!&ndash; item&ndash;&gt;
+                        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ch"
+                            title="Chinese">
+                            <img src="assets/images/flags/china.svg" alt="user-image" class="me-2 rounded" height="18">
+                            <span class="align-middle">中国人</span>
+                        </a>
+
+                        &lt;!&ndash; item&ndash;&gt;
+                        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="fr"
+                            title="French">
+                            <img src="assets/images/flags/french.svg" alt="user-image" class="me-2 rounded" height="18">
+                            <span class="align-middle">français</span>
+                        </a>
+                    </div>
+                </div>-->
+
+                <!--<div class="dropdown topbar-head-dropdown ms-1 header-item">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                        >
+                        <i class=' ri-question-line  fs-22'></i>
+                    </button>
+                    
+                </div>
+                 <div class="dropdown topbar-head-dropdown ms-1 header-item" style="display: none !important">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                        id="page-header-cart-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class='bx bx-shopping-bag fs-22'></i>
+                        <span
+                            class="position-absolute topbar-badge cartitem-badge fs-10 translate-middle badge rounded-pill bg-info">5</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end p-0 dropdown-menu-cart"
+                        aria-labelledby="page-header-cart-dropdown">
+                        
+                        <div data-simplebar style="max-height: 300px;">
+                            <div class="p-2">
+                                <div class="text-center empty-cart" id="empty-cart">
+                                    
+                                </div>
+                                
+
+                                
+
+                                
+                            </div>
+                        </div>
+                        <div class="p-3 border-bottom-0 border-start-0 border-end-0 border-dashed border"
+                            id="checkout-elem">
+                            <h5 class="m-0" id="cart-item-total">$1258.58</h5>
+                        </div>
+                    </div>
+                </div>-->
+
+
+                <div class=" header-item d-none d-sm-flex dark_theme">
+                    <button data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Светлая тема"
+                            onclick="switch_theme('light');"
+                            class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                        <i class='ri-sun-line menu_icon'></i>
+                    </button>
+                </div>
+                <div class=" header-item d-none d-sm-flex light_theme">
+                    <button data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Темная тема"
+                            onclick="switch_theme('dark');"
+                            class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                        <i class='ri-moon-line menu_icon'></i>
+                    </button>
+                </div>
+                <div class="dropdown ms-sm-3 header-item topbar-user" >
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" id="user_picture" src="assets/images/users/user-dummy-img.jpg"
+                                alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span id="user_name" class="d-none d-xl-inline-block ms-1 fw-medium user-name-text"></span>
+                                <span id="user_email" class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        
+                        <!--<a class="dropdown-item" href="account.html"><i
+                                class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
+                                class="align-middle">Аккаунт</span></a>-->
+                        <a class="dropdown-item" href="main.html"><i
+                                class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span
+                                class="align-middle">Проекты</span></a>
+                        <a class="dropdown-item" target="_blank" href="https://mixar.biz/product/webar#rec482780471"><i
+                                class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
+                                class="align-middle">Поддержка</span></a>
+                        <a class="dropdown-item" href="javascript:logout()"><i
+                                class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
+                                class="align-middle" >Выход</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="main.html" class="logo logo-dark">
+
+                        <span class="logo-sm">
+
+                            <img src="assets/images/logo.png" alt="" height="22">
+
+                        </span>
+
+                    <span class="logo-lg">
+
+                            <img src="assets/images/logo-dark.png" alt="" height="17">
+
+                        </span>
+
+                </a>
+
+                <!-- Light Logo-->
+
+                <a href="main.html" class="logo logo-light">
+
+                        <span class="logo-sm">
+
+                            <img src="assets/images/logo.png" alt="" height="22">
+
+                        </span>
+
+                    <span class="logo-lg">
+
+                            <img src="assets/images/logo-light.png" alt="" height="17">
+
+                        </span>
+
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+            
+                    <div id="two-column-menu">
+                    </div>
+                    <!-- MAIN MENU-->
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span >Меню</span></li>
+                        <li class="nav-item">
+                            <a href="main.html" class="nav-link menu-link active" role="button"
+                                >
+                                <i class="ri-home-3-line"></i> <span >Проекты</span>
+                            </a>
+                            
+                        </li>
+                        <li  class="nav-item">
+                            <a href="docs.html" class="nav-link menu-link" role="button">
+                                <i class="ri-book-mark-line"></i> <span >Документация</span>
+                            </a>
+
+                        </li>
+                        <!--<li class="nav-item ">
+                            <a href="projects.html" class="nav-link menu-link " role="button"
+                                >
+                                <i class="ri-apps-2-line"></i> <span >Проекты</span>
+                            </a>
+                            
+                        </li>
+                        <li  class="nav-item">
+                            <a href="templates.html" class="nav-link menu-link" role="button"
+                                >
+                                <i class=" ri-rocket-2-line"></i> <span >Шаблоны</span>
+                            </a>
+                            
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="analytics.html" class="nav-link menu-link" role="button"
+                                >
+                                <i class="ri-pie-chart-line"></i> <span >Аналитика</span>
+                            </a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                <i class="ri-book-mark-line"></i> <span >Обучение</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDashboards">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="tutorials.html" class="nav-link" > Уроки </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="news.html" class="nav-link" > Новости </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="slack.html" class="nav-link" > Slack Сообщество </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="support.html" class="nav-link" >Чат с поддержкой </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a  href="prices.html" class="nav-link menu-link" role="button"
+                                >
+                                <i class=" ri-coins-line"></i> <span >Тарифы</span>
+                            </a>
+                            
+                        </li>-->
+
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- ANALYTICS -->
+                   <!-- <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+
+                                <h4 class="mb-sm-0">Аналитика</h4>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row  mb-3">
+
+                        <div class="col-xxl-5">
+
+                            <div class="d-flex flex-column h-100">
+
+                                <div class="row h-100">
+
+                                    <div class="col-12">
+
+                                        <div class="card">
+
+                                            <div class="card-body p-0">
+
+                                                <div class="alert alert-warning border-0 rounded-0 m-0 d-flex align-items-center" role="alert">
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle text-warning me-2 icon-sm"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+
+                                                    <div class="flex-grow-1 text-truncate">Бесплатный период заканчивается через <b>12</b> дней.
+
+                                                    </div>
+
+                                                    <div class="flex-shrink-0">
+
+                                                        <a href="pages-pricing.html" class="text-reset text-decoration-underline"><b>Повысить</b></a>
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                                <div class="row align-items-end">
+
+                                                    <div class="col-sm-8">
+
+                                                        <div class="p-3">
+
+                                                            <p class="fs-16 lh-base">Обновите ваш тарифный план с <span class="fw-bold">Бесплатного</span>, на ‘Стандартный’ <i class="mdi mdi-arrow-right"></i></p>
+
+                                                            <div class="mt-3">
+
+                                                                <a href="pages-pricing.html" class="btn btn-success">Обновить тариф!</a>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+
+                                                        <div class="px-3">
+
+                                                            <img src="assets/images/user-illustarator-2.png" class="img-fluid" alt="">
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div> &lt;!&ndash; end card-body&ndash;&gt;
+
+                                        </div>
+
+                                    </div> &lt;!&ndash; end col&ndash;&gt;
+
+                                </div> &lt;!&ndash; end row&ndash;&gt;
+
+
+
+                                 &lt;!&ndash; end row&ndash;&gt;
+
+
+
+                                 &lt;!&ndash; end row&ndash;&gt;
+
+                            </div>
+
+                        </div> &lt;!&ndash; end col&ndash;&gt;
+
+
+
+                        <div class="col-xxl-7">
+
+                            <div class="row h-100">
+
+                                <div class="col-xl-6">
+                                    <div class="card card-animate" style="height: calc(100% - 1.5rem);">
+
+                                            <div class="card-body">
+
+                                                <div class="d-flex justify-content-between">
+
+                                                    <div>
+
+                                                        <p class="fw-semibold text-muted mb-0">Просмотры / мес</p>
+
+                                                        <h1 class="mt-4 ff-secondary fw-bold mb-4"><span class="counter-value" data-target="763" style="font-size: 2.7rem; font-weight: 600">763</span>
+
+                                                        </h1>
+
+                                                        <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
+
+                                                                <i class="ri-arrow-up-line align-middle"></i> 16.24 %
+
+                                                            </span> vs. прошлый месяц</p>
+
+                                                    </div>
+
+                                                    <div>
+
+                                                        <div class="avatar-sm flex-shrink-0">
+
+                                                            <span class="avatar-title bg-soft-info rounded-circle fs-2">
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users text-info"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+
+                                                            </span>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>&lt;!&ndash; end card body &ndash;&gt;
+
+                                        </div>
+
+                                    &lt;!&ndash; end card &ndash;&gt;
+
+                                </div>&lt;!&ndash; end col &ndash;&gt;
+
+
+
+                                <div class="col-xl-6">
+                                    <div class="card card-animate" style="height: calc(100% - 1.5rem);">
+
+                                            <div class="card-body">
+
+                                                <div class="d-flex justify-content-between">
+
+                                                    <div>
+
+                                                        <p class="fw-semibold text-muted mb-0">Среднее время просмотра / мес</p>
+
+                                                        <h1 class="mt-4 ff-secondary fw-bold mb-4"><span   style="font-size: 2.7rem;font-weight: 600">5,6 мин</span>
+
+                                                        </h1>
+
+                                                        <p class="mb-0 text-muted"><span class="badge bg-light text-success mb-0">
+
+                                                                <i class="ri-arrow-up-line align-middle"></i> 16.24 %
+
+                                                            </span> vs. прошлый месяц</p>
+
+                                                    </div>
+
+                                                    <div>
+
+                                                        <div class="avatar-sm flex-shrink-0">
+
+                                                            <span class="avatar-title bg-soft-info rounded-circle fs-2">
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock text-info"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+
+                                                            </span>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>&lt;!&ndash; end card body &ndash;&gt;
+
+                                        </div>
+
+                                    &lt;!&ndash; end card &ndash;&gt;
+
+                                </div> &lt;!&ndash; end col&ndash;&gt;
+
+
+
+                            </div> &lt;!&ndash; end row&ndash;&gt;
+
+                        </div>&lt;!&ndash; end col &ndash;&gt;
+
+                    </div>-->
+                    <!-- end row -->
+                    
+                    <!--PROJECTS-->
+                    <!--<div class="row">
+
+                        <div class="col-12">
+
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+
+                                <h4 class="mb-sm-0">Проекты</h4>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>-->
+                    <!-- end row -->
+
+                    <div class="row g-4 mb-3">
+                        <div class="col-sm-auto">
+                            <div>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_project_modal"><i
+                                        class="ri-add-line align-bottom me-1"></i> Создать проект</a>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="d-flex justify-content-sm-end gap-2">
+<!--
+                                <div class="search-box ms-2">
+                                    <input type="text" class="form-control" placeholder="Поиск...">
+                                    <i class="ri-search-line search-icon"></i>
+                                </div>
+
+                                <select class="form-control w-md" data-choices data-choices-search-false>
+                                    <option value="All" selected>Все время</option>
+                                    <option value="Today">Сегодня</option>
+                                    <option value="Yesterday" >Вчера</option>
+                                    <option value="Last 7 Days">Последние 7 дней</option>
+                                    <option value="Last 30 Days">Последние 30 дней</option>
+                                    <option value="This Month">Этот месяц</option>
+                                    <option value="Last Year">Этот год</option>
+                                </select>
+-->
+                                <!-- ghost Buttons -->
+                                <!--<a href="projects.html" type="button" class="btn btn-ghost-primary waves-effect waves-light" style="display: flex; align-content: center">Все проекты <i class="ri-arrow-right-line" style="margin-left: 8px"></i></a>-->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row mb-3" id="project_list">
+                        <!--<div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+                                        
+                                        <a href="editor.html" class="text-center pb-3" style="padding: 0 !important;">
+                                            <img src="assets/images/p1.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                        </a>
+                                    </div>
+                                    <div class="py-3" style="margin-bottom: 0px !important;">
+                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;"><a href="editor.html" class="text-dark">Ознакомительный проект с трекингом пола</a></h5><p class="text-muted mb-4" style="margin: 0 !important;">Изменено: Сегодня</p>
+                                        
+
+                                        
+                                    </div>
+                                    <div>
+                                        <div class="d-flex ">
+                                            <div class="flex-grow-1">
+                                                <div><i class=" ri-eye-fill align-bottom me-1 text-muted"></i> 11 / мес.
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div><div class="dropdown">
+                                                <button class="btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-sm"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                                </button>
+
+                                                <div class="dropdown-menu dropdown-menu-end" style="">
+
+                                                    <a class="dropdown-item" href="javascript:delete_project(-1)" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i>
+                                                        Удалить</a>
+                                                </div>
+                                            </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--
+                        <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+                                        
+                                        <a href="editor.html" class="text-center pb-3" style="padding: 0 !important;">
+                                            <img src="assets/images/p2.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                        </a>
+                                    </div>
+                                    <div class="py-3" style="margin-bottom: 0px !important;">
+                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;"><a href="editor.html" class="text-dark">Ознакомительный проект с трекингом стен</a></h5><p class="text-muted mb-4" style="margin: 0 !important;">Изменено: Сегодня</p>
+                                        
+
+                                        
+                                    </div>
+                                    <div>
+                                        <div class="d-flex ">
+                                            <div class="flex-grow-1">
+                                                <div><i class=" ri-eye-fill align-bottom me-1 text-muted"></i> 11 / мес.
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div><div class="dropdown">
+                                                <button class="btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-sm"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                                </button>
+
+                                                <div class="dropdown-menu dropdown-menu-end" style="">
+                                                    <a class="dropdown-item" href="apps-projects-overview.html"><i class=" ri-file-copy-fill align-bottom me-2 text-muted"></i>
+                                                        Клонировать</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                        Переименовать</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pie-chart-fill align-bottom me-2 text-muted"></i>
+                                                        Аналитика</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class=" ri-settings-3-fill align-bottom me-2 text-muted"></i>
+                                                        Настройки</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="  ri-share-forward-fill align-bottom me-2 text-muted"></i>
+                                                        Поделиться</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i>
+                                                        Удалить</a>
+                                                </div>
+                                            </div></div>
+                                            </div>
+                                        </div>
+                                        &lt;!&ndash; /.progress &ndash;&gt;
+                                    </div>
+
+                                </div>
+                                &lt;!&ndash; end card body &ndash;&gt;
+                            </div>
+                            &lt;!&ndash; end card &ndash;&gt;
+                        </div>
+                        &lt;!&ndash; end col &ndash;&gt;
+
+                        <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+                                        
+                                        <a href="editor.html" class="text-center pb-3" style="padding: 0 !important;">
+                                            <img src="assets/images/p3.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                        </a>
+                                    </div>
+                                    <div class="py-3" style="margin-bottom: 0px !important;">
+                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;"><a href="editor.html" class="text-dark">Ознакомительный проект с трекингом изображения</a></h5><p class="text-muted mb-4" style="margin: 0 !important;">Изменено: Сегодня</p>
+                                        
+
+                                        
+                                    </div>
+                                    <div>
+                                        <div class="d-flex ">
+                                            <div class="flex-grow-1">
+                                                <div><i class=" ri-eye-fill align-bottom me-1 text-muted"></i> 11 / мес.
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div><div class="dropdown">
+                                                <button class="btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-sm"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                                </button>
+
+                                                <div class="dropdown-menu dropdown-menu-end" style="">
+                                                    <a class="dropdown-item" href="apps-projects-overview.html"><i class=" ri-file-copy-fill align-bottom me-2 text-muted"></i>
+                                                        Клонировать</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                        Переименовать</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pie-chart-fill align-bottom me-2 text-muted"></i>
+                                                        Аналитика</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class=" ri-settings-3-fill align-bottom me-2 text-muted"></i>
+                                                        Настройки</a>
+                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="  ri-share-forward-fill align-bottom me-2 text-muted"></i>
+                                                        Поделиться</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i>
+                                                        Удалить</a>
+                                                </div>
+                                            </div></div>
+                                            </div>
+                                        </div>
+                                        &lt;!&ndash; /.progress &ndash;&gt;
+                                    </div>
+
+                                </div>
+                                &lt;!&ndash; end card body &ndash;&gt;
+                            </div>
+                            &lt;!&ndash; end card &ndash;&gt;
+                        </div>
+                        &lt;!&ndash; end col &ndash;&gt;
+                        -->
+
+                        <div class="col-xxl-3 col-sm-6 project-card" id="create_new_project_card" style="display:none">
+                            <div class="card" style="/*border: 1px dashed #0075ff; height: calc(100% - 1.5rem);*/">
+                                <div class="card-body" style="align-content: center;text-align: center;/* display: flex; */vertical-align: middle;display: grid;">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="/* position: relative; */padding: 0 !important;/* overflow: hidden; *//* padding-top: 1.5rem !important; */background: none !important;">
+                                        
+                                        <div class="text-center pb-3" style="/* padding: 0 !important; */font-size: 100px;/* font-weight: 900; */">
+                                            <img src="assets/images/project-launch2.png" style="width: 30%;/* margin-top: 20px; */ margin-top:20px">
+                                        </div>
+                                    </div>
+                                    <div class="py-3" style="margin-bottom: 0px !important;padding-bottom: 0px !important;">
+                                        <h5 style="margin-bottom: 1.5rem;">Создайте новый проект!</h5>
+                                        <a  data-bs-toggle="modal" data-bs-target="#add_project_modal" class="btn btn-primary" style="margin: 0 !important;margin-bottom: 20px !important;"><i class="ri-add-line align-bottom me-1"></i> Создать проект</a>
+                                        
+
+                                        
+                                    </div>
+                                    
+
+                                </div>
+                                <!-- end card body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-xxl-3 col-sm-6 project-card">
+                            
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                    
+                    <!-- TUTORIALS -->
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between" style=" padding-bottom: 10px;
+">
+
+                                <h4 class="mb-sm-0">Уроки</h4>
+                                <div class="page-title-right">
+                                    <a target="_blank" href="https://www.youtube.com/playlist?list=PLIBwm7ORx8QHDh0hwIR4oERo8PrLhbZCd"> <button type="button" class="btn btn-ghost-primary waves-effect waves-light" style="display: flex; align-content: center">Все уроки <i class="ri-arrow-right-line" style="margin-left: 8px"></i></button></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="mb-2 card-animate" style="border-radius: 4px;    overflow: hidden;position: relative;">
+
+                                <div class="image-popup"  title="">
+
+                                    <img class="gallery-img img-fluid mx-auto" src="assets/images/tutorials/1.webp" alt="">
+
+
+                                    <div class="gallery-overlay">
+
+
+
+                                    </div>
+
+                                </div>
+                                <a onClick="open_lesson(1,'https://www.youtube.com/embed/ExpYieX-uJw?si=67UZe1geGYGnOV6A')" data-bs-toggle="modal" data-bs-target="#learningModal" class="play_button" style="">
+                                    <div style="">
+                                        <img src="assets/images/play-button.png">
+                                        <img class="b_active" src="assets/images/play-button2.png">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <h5 class="text-dark fs-15">Знакомство с редактором</h5>
+                             
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                        
+                        <!-- end col -->
+                         <div class="col-xxl-3 col-sm-6 project-card">
+                             <div class="mb-2 card-animate" style="border-radius: 4px;    overflow: hidden;position: relative;">
+
+                                 <div class="image-popup" title="">
+
+                                     <img class="gallery-img img-fluid mx-auto" src="assets/images/tutorials/25e1f.webp?v=2" alt="">
+
+
+                                     <div class="gallery-overlay">
+
+
+
+                                     </div>
+
+                                 </div>
+                                 <a onClick="open_lesson(2,'https://www.youtube.com/embed/XJoOhXZZ0IM?si=q5G8RT0b6D6d54IO')" data-bs-toggle="modal" data-bs-target="#learningModal" class="play_button" style="">
+                                     <div style="">
+                                         <img src="assets/images/play-button.png">
+                                         <img class="b_active" src="assets/images/play-button2.png">
+                                     </div>
+                                 </a>
+
+                             </div>
+                             <h5 class="text-dark fs-15">Добавление объектов на сцену</h5>
+                             
+                            <!-- end card -->
+                        </div>
+                        
+                        <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="mb-2 card-animate" style="border-radius: 4px;    overflow: hidden;position: relative;">
+
+                                <div class="image-popup"  title="">
+
+                                    <img class="gallery-img img-fluid mx-auto" src="assets/images/tutorials/3.webp" alt="">
+
+
+                                    <div class="gallery-overlay">
+
+
+
+                                    </div>
+
+                                </div>
+                                <a onClick="open_lesson(3,'https://www.youtube.com/embed/HVf5qRDJ2ug?si=Ips8VXcqCs8vjra9')" data-bs-toggle="modal" data-bs-target="#learningModal" class="play_button" style="">
+                                    <div style="">
+                                        <img src="assets/images/play-button.png">
+                                        <img class="b_active" src="assets/images/play-button2.png">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <h5 class="text-dark fs-15">Загрузка моделей со Sketchfab </h5>
+                             
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                         <div class="col-xxl-3 col-sm-6 project-card">
+                             <div class="mb-2 card-animate" style="border-radius: 4px;    overflow: hidden;position: relative;">
+
+                                 <div class="image-popup"    title="">
+
+                                     <img class="gallery-img img-fluid mx-auto" src="assets/images/tutorials/4.html" alt="">
+
+
+                                     <div class="gallery-overlay">
+
+
+
+                                     </div>
+
+                                 </div>
+                                 <a onClick="open_lesson(4,'https://www.youtube.com/embed/N9SddUx6yJ0?si=v-4PHUJl2lCcx3Vf')" data-bs-toggle="modal" data-bs-target="#learningModal" class="play_button" style="">
+                                     <div style="">
+                                         <img src="assets/images/play-button.png">
+                                         <img class="b_active" src="assets/images/play-button2.png">
+                                     </div>
+                                 </a>
+
+                             </div>
+                             <h5 class="text-dark fs-15">Виды привязок</h5>
+                             
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                    
+                    <!-- NEWS-->
+                    <!--<div class="row">
+
+                        <div class="col-12">
+
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between" style=" padding-bottom: 10px;
+">
+
+                                <h4 class="mb-sm-0">Последние новости</h4>
+                                <div class="page-title-right">
+                                    <a  href="news.html" type="button" class="btn btn-ghost-primary waves-effect waves-light" style="display: flex; align-content: center">Все новости <i class="ri-arrow-right-line" style="margin-left: 8px"></i></a>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>-->
+                    <!-- end row -->
+
+
+                    <!--<div class="row mb-3">
+                        <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="card " style="height: calc(100% - 1.5rem)">
+                                <div class="card-body">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+                                        
+                                        <a href="article.html" class="text-center pb-3" style="padding: 0 !important;">
+                                            <img src="assets/images/news4.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                        </a>
+                                    </div>
+                                    <div class="py-3 " style="">
+                                        <h5 class="mb-2 fs-15" style="/* margin-bottom: 0.25rem!important; */"><a href="article.html" class="text-dark">Скоро: трекинг зданий и улиц с точностью до 20 см</a></h5><p class="text-muted mb-4" style="margin: 0 !important;">На базе платформы вы сможете создавать невероятные AR-кампании, привязанные к реальной местности</p>
+                                        
+
+                                        
+                                    </div><div>
+                                        <div class="d-flex ">
+                                            <div class="flex-grow-1">
+                                                <div><i class="   ri-calendar-event-line align-bottom me-1 text-muted"></i> 20 июня 2022</div>
+                                            </div>
+                                            
+                                        </div>
+                                        &lt;!&ndash; /.progress &ndash;&gt;
+                                    </div>
+                                    
+
+                                </div>
+                                &lt;!&ndash; end card body &ndash;&gt;
+                            </div>
+                            &lt;!&ndash; end card &ndash;&gt;
+                        </div>
+                        &lt;!&ndash; end col &ndash;&gt;
+                         <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="card " style="height: calc(100% - 1.5rem)">
+                                <div class="card-body">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+                                        
+                                        <a href="article.html" class="text-center pb-3" style="padding: 0 !important;">
+                                            <img src="assets/images/news3.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                        </a>
+                                    </div>
+                                    <div class="py-3 " style="">
+                                        <h5 class="mb-2 fs-15" style="/* margin-bottom: 0.25rem!important; */"><a href="article.html" class="text-dark">Скоро: трекинг объектов реального мира</a></h5><p class="text-muted mb-4" style="margin: 0 !important;">Привязывайте дополненную реальность к объектам реального мира на базе платформы</p>
+                                        
+
+                                        
+                                    </div><div>
+                                        <div class="d-flex ">
+                                            <div class="flex-grow-1">
+                                                <div><i class="   ri-calendar-event-line align-bottom me-1 text-muted"></i> 20 июня 2022</div>
+                                            </div>
+                                            
+                                        </div>
+                                        &lt;!&ndash; /.progress &ndash;&gt;
+                                    </div>
+                                    
+
+                                </div>
+                                &lt;!&ndash; end card body &ndash;&gt;
+                            </div>
+                            &lt;!&ndash; end card &ndash;&gt;
+                        </div>
+                        &lt;!&ndash; end col &ndash;&gt;
+                         <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="card " style="height: calc(100% - 1.5rem)">
+                                <div class="card-body">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+                                        
+                                        <a href="article.html" class="text-center pb-3" style="padding: 0 !important;">
+                                            <img src="assets/images/news2.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                        </a>
+                                    </div>
+                                    <div class="py-3 " style="">
+                                        <h5 class="mb-2 fs-15" style="/* margin-bottom: 0.25rem!important; */"><a href="article.html" class="text-dark">Скоро: поддержка AR и VR гарнитур</a></h5><p class="text-muted mb-4" style="margin: 0 !important;">Любой создаваемый проект будет возможно запустить на самых популярных AR и VR гарнитурах</p>
+                                        
+
+                                        
+                                    </div><div>
+                                        <div class="d-flex ">
+                                            <div class="flex-grow-1">
+                                                <div><i class="   ri-calendar-event-line align-bottom me-1 text-muted"></i> 20 июня 2022</div>
+                                            </div>
+                                            
+                                        </div>
+                                        &lt;!&ndash; /.progress &ndash;&gt;
+                                    </div>
+                                    
+
+                                </div>
+                                &lt;!&ndash; end card body &ndash;&gt;
+                            </div>
+                            &lt;!&ndash; end card &ndash;&gt;
+                        </div>
+                        &lt;!&ndash; end col &ndash;&gt;
+                         <div class="col-xxl-3 col-sm-6 project-card">
+                            <div class="card " style="height: calc(100% - 1.5rem)">
+                                <div class="card-body">
+                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+                                        
+                                        <a href="article.html" class="text-center pb-3" style="padding: 0 !important;">
+                                            <img src="assets/images/news1.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                        </a>
+                                    </div>
+                                    <div class="py-3 " style="">
+                                        <h5 class="mb-2 fs-15" style="/* margin-bottom: 0.25rem!important; */"><a href="article.html" class="text-dark">Скоро: PRO-редактор для разработчиков</a></h5><p class="text-muted mb-4" style="margin: 0 !important;">Разработчики получат доступ ко всем возможностям движка и онлайн редактору кода</p>
+                                        
+
+                                        
+                                    </div><div>
+                                        <div class="d-flex ">
+                                            <div class="flex-grow-1">
+                                                <div><i class="   ri-calendar-event-line align-bottom me-1 text-muted"></i> 20 июня 2022</div>
+                                            </div>
+                                            
+                                        </div>
+                                        &lt;!&ndash; /.progress &ndash;&gt;
+                                    </div>
+                                    
+
+                                </div>
+                                &lt;!&ndash; end card body &ndash;&gt;
+                            </div>
+                            &lt;!&ndash; end card &ndash;&gt;
+                        </div>
+                        &lt;!&ndash; end col &ndash;&gt;
+                        
+                        <div class="col-xxl-3 col-sm-6 project-card">
+                            
+                            &lt;!&ndash; end card &ndash;&gt;
+                        </div>
+                        &lt;!&ndash; end col &ndash;&gt;
+                    </div>-->
+                    <!-- end row -->
+
+                    <!-- Default Modals -->
+
+                    <div class="modal fade" id="add_project_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fw-bold" id="myLargeModalLabel">Создать проект</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row mb-3">
+                                        <div class="col-xxl-3 col-sm-3 project-card">
+                                            <div class="card project_type"  id="project_horizontal_tracking">
+                                                <div class="card-body" style="
+    /* transform: translateY(calc(-1.5rem / 5)); */
+    /* box-shadow: 0 5px 10px rgb(30 32 37 / 12%); */
+">
+                                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+
+                                                        <a  class="text-center pb-3" style="padding: 0 !important;">
+                                                            <img src="assets/images/projects/plane_h.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pt-3" style="margin-bottom: 0px !important;">
+                                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;">Проект с трекингом горизонтальной плоскости</h5><p class="text-muted mt-3" style="
+    /* color: #0075ff !important; */
+">Контент можно расположить на таких поверхностях, как пол или стол</p>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- end card body -->
+                                            </div>
+                                            <!-- end card -->
+                                        </div>
+                                        <!-- end col -->
+
+
+
+                                        <div class="col-xxl-3 col-sm-3 project-card" style="
+    height: 100%;
+">
+                                            <div class="card project_type" id="project_vertical_tracking">
+                                                <div class="card-body" style="
+    height: 100%;
+">
+                                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+
+                                                        <a class="text-center pb-3" style="padding: 0 !important;">
+                                                            <img src="assets/images/projects/plane_v.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pt-3" style="margin-bottom: 0px !important;">
+                                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;">Проект с трекингом вертикальной плоскости</h5><p class="text-muted mt-3" style="">Контент можно расположить на стенах и других вертикальных поверхностях</p>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- end card body -->
+                                            </div>
+                                            <!-- end card -->
+                                        </div>
+                                        <div class="col-xxl-3 col-sm-3 project-card">
+                                        <div class="card project_type" id="project_image_tracking">
+                                            <div class="card-body">
+                                                <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+
+                                                    <a  class="text-center pb-3" style="padding: 0 !important;">
+                                                        <img src="assets/images/projects/image.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                                    </a>
+                                                </div><div class="pt-3" style="margin-bottom: 0px !important;">
+                                                <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;">Проект с трекингом изображений</h5><p class="text-muted mt-3" style="">Контент можно привязать к плоским изображениям, например к страницам книги</p>
+
+
+
+                                            </div>
+
+
+
+                                            </div>
+                                            <!-- end card body -->
+                                        </div>
+                                        <!-- end card -->
+                                    </div>
+
+                                        <div class="col-xxl-3 col-sm-3 project-card" style="">
+                                            <div class="card project_type" id="project_object_tracking">
+                                                <div class="card-body" style="
+    /* transform: translateY(calc(-1.5rem / 5)); */
+    /* box-shadow: 0 5px 10px rgb(30 32 37 / 12%); */
+">
+                                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+
+                                                        <a class="text-center pb-3" style="padding: 0 !important;">
+                                                            <img src="../mix-ar.ru/web/editor/dev/assets/images/object_tracking.jpg" alt="" height="100" style="width: 100%;height: auto;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pt-3" style="margin-bottom: 0px !important;">
+                                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;">Проект с трекингом объектов</h5><p class="text-muted mt-3" style="
+    /* color: #0075ff !important; */
+">Контент можно привязать к физическим объектам</p>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- end card body -->
+                                            </div>
+                                            <!-- end card -->
+                                        </div>
+                                        <!-- end col -->
+
+
+
+
+                                        <!-- end col -->
+
+
+                                        <!-- end col -->
+                                    </div>
+
+                                    <div>
+                                        <label for="project_name_input" class="form-label">Название проекта</label>
+                                        <input type="text" id="project_name_input" class="form-control" disabled="" placeholder="Введите название">
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Закрыть</a>
+                                <button type="button" id="create_marker" class="btn btn-primary "
+                                        data-bs-toggle="modal" data-bs-target="#chooseImageModeModal"  disabled >Создать</button>
+                                <button type="button" id="create_plane_project" class="btn btn-primary " style="display: none"  disabled >Создать</button>
+                                <button type="button" id="create_object_project" class="btn btn-primary " style="display: none"
+                                        data-bs-toggle="modal" data-bs-target="#objectModal"  disabled >Создать</button>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+
+
+
+                    <div id="chooseImageModeModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fw-bold" id="chooseImageModeModalLabel">Выберите режим</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row mb-3">
+                                        <div class="col-xxl-6 col-sm-6 project-card">
+                                            <div class="card project_mode"  id="project_light">
+                                                <div class="card-body" style="
+    /* transform: translateY(calc(-1.5rem / 5)); */
+    /* box-shadow: 0 5px 10px rgb(30 32 37 / 12%); */
+">
+                                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+
+                                                        <a  class="text-center pb-3" style="padding: 0 !important;">
+                                                            <img src="assets/images/projects/light.png" alt="" height="100" style="width: 100%;height: auto;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pt-3" style="margin-bottom: 0px !important;">
+                                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;">Упрощенный режим</h5><p class="text-muted mt-3" style="
+    /* color: #0075ff !important; */
+">Достаточно только загрузить фото и видео</p>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- end card body -->
+                                            </div>
+                                            <!-- end card -->
+                                        </div>
+                                        <!-- end col -->
+
+
+
+                                        <div class="col-xxl-6 col-sm-6 project-card">
+                                            <div class="card project_mode" id="project_pro">
+                                                <div class="card-body" style="
+    height: 100%;
+">
+                                                    <div class="p-3 mt-n3 mx-n3 bg-light rounded-top" style="position: relative;padding: 0 !important;overflow: hidden;">
+
+                                                        <a class="text-center pb-3" style="padding: 0 !important;">
+                                                            <img src="assets/images/projects/pro.png" alt="" height="100" style="width: 100%;height: auto;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="pt-3" style="margin-bottom: 0px !important;">
+                                                        <h5 class="mb-3 fs-15" style="margin-bottom: 0.25rem!important;">Режим PRO</h5><p class="text-muted mt-3" style="">Добавление 3d-моделей, интерактива и интерфейс 3д-редактора</p>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- end card body -->
+                                            </div>
+                                            <!-- end card -->
+                                        </div>
+
+                                        <!-- end col -->
+
+
+
+
+                                        <!-- end col -->
+
+
+                                        <!-- end col -->
+                                    </div>
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Закрыть</a>
+                                    <button type="button" id="create_marker_light" class="btn btn-primary "
+                                            data-bs-toggle="modal" data-bs-target="#markerModal2"  disabled >Продолжить</button>
+                                    <button type="button" id="create_marker_pro" data-bs-target="#markerModal"  class="btn btn-primary " data-bs-toggle="modal"  style="display: none"  disabled >Продолжить</button>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!-- Add Marker Modal -->
+                <div id="markerModal" class="modal fade " tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="markerModalLabel">Добавить новый маркер</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-muted">Загрузите изображение маркера
+                                    (<a href="https://mix-ar.ru/web/editor/0.9.0/docs/markers.pdf"
+                                        target="_blank">Рекомендации</a>)</p>
+
+                                <div class="upload_area">
+                                    <input type="file"
+                                           class="filepond"
+                                           id="uploadmarker"
+                                           name="uploadmarker"
+                                           data-label-file-loading="Загрузка"
+                                           data-Label-Tap-To-Cancel="Нажмите, чтобы отменить"
+                                           data-Label-File-Waiting-For-Size="Вычисление размера"
+                                           data-accepted-file-types="['image/png', 'image/jpeg']"
+                                           data-label-Max-File-Size="Максимальный размер файла {filesize}"
+                                           data-label-Max-File-Size-Exceeded="Файл слишком большой"
+                                           data-allow-reorder="false"
+                                           data-max-file-size="50MB"
+                                           accepted-file-types="image/png, image/jpeg"
+                                           label-file-type-not-allowed="Неверный формат файла"
+                                           file-validate-type-label-expected-types="Допустимые форматы: png, jpg"
+                                           data-label-idle='<div style="display: flex;-webkit-box-align: center;align-items: center;"><i class="display-4 text-muted
+                                       ri-upload-cloud-2-fill" style="font-size: 26px;margin-right: 12px;"></i>Переместите файлы сюда
+                                        </div>'
+                                           data-max-files="1">
+                                </div>
+                                <div class="loading-bar">
+                                    <i class="mdi mdi-spin mdi-loading"></i>
+                                </div>
+
+
+                                <br>
+                                <div>
+                                    <label for="basiInput" class="form-label">Название маркера</label>
+                                    <input type="text" class="form-control" style="margin-bottom: 12px;"
+                                           id="marker_name_input" disabled placeholder="Введите название">
+                                    <label for="basiInput" class="form-label">Физические размеры</label>
+                                    <div class="row g-3 px-md-1" style="margin-bottom: 12px">
+                                        <div class="col-sm-6 px-md-1">
+                                            <div class="input-group">
+                                                <span class="input-group-text">ширина (см)</span>
+                                                <input type="text" class="form-control accurate allownumericwithdecimal"
+                                                       id="marker_size_x_input" disabled placeholder="0.0">
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-sm-6 px-md-1">
+                                            <div class="input-group">
+                                                <span class="input-group-text">высота (см)</span>
+                                                <input type="text" class="form-control accurate allownumericwithdecimal"
+                                                       id="marker_size_y_input" disabled placeholder="0.0">
+                                            </div>
+                                        </div><!--end col-->
+                                        <!--end col-->
+
+                                    </div>
+                                    <label class="form-label mini-label " style="margin-bottom: 8px">Ориентация маркера</label>
+                                    <select class="form-select" aria-label=".form-select-sm example"
+                                            id="marker_orientation_input" disabled>
+                                        <option selected="" value="Horizontal">Горизонтальная</option>
+                                        <option value="Vertival">Вертикальная</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal"
+                                        id="close_marker_button">Закрыть</button>
+                                <button type="button" class="btn btn-primary " data-bs-dismiss="modal"
+                                        id="add_marker_button" disabled>Добавить</button>
+                            </div>
+
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <div id="markerModal2" class="modal fade " tabindex="-1" aria-labelledby="markerModal2" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="markerModal2Label">Добавить новый маркер</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-muted">Загрузите изображение маркера
+                                    (<a href="https://mix-ar.ru/web/editor/0.9.0/docs/markers.pdf"
+                                        target="_blank">Рекомендации</a>)</p>
+
+                                <div class="upload_area">
+                                    <input type="file"
+                                           class="filepond"
+                                           id="uploadmarker2"
+                                           name="uploadmarker2"
+                                           data-label-file-loading="Загрузка"
+                                           data-Label-Tap-To-Cancel="Нажмите, чтобы отменить"
+                                           data-Label-File-Waiting-For-Size="Вычисление размера"
+                                           data-accepted-file-types="['image/png', 'image/jpeg']"
+                                           data-label-Max-File-Size="Максимальный размер файла {filesize}"
+                                           data-label-Max-File-Size-Exceeded="Файл слишком большой"
+                                           data-allow-reorder="false"
+                                           data-max-file-size="50MB"
+                                           accepted-file-types="image/png, image/jpeg"
+                                           label-file-type-not-allowed="Неверный формат файла"
+                                           file-validate-type-label-expected-types="Допустимые форматы: png, jpg"
+                                           data-label-idle='<div style="display: flex;-webkit-box-align: center;align-items: center;"><i class="display-4 text-muted
+                                       ri-upload-cloud-2-fill" style="font-size: 26px;margin-right: 12px;"></i>Переместите файлы сюда
+                                        </div>'
+                                           data-max-files="1">
+                                </div>
+                                <div class="loading-bar">
+                                    <!--<i class="mdi mdi-spin mdi-loading"></i>-->
+                                </div>
+                                <p class="text-muted">Загрузите видео в формате MP4</p>
+                                <div class="upload_area">
+                                    <input type="file"
+                                           class="filepond"
+                                           id="uploadvideo"
+                                           name="uploadvideo"
+                                           data-label-file-loading="Загрузка"
+                                           data-Label-Tap-To-Cancel="Нажмите, чтобы отменить"
+                                           data-Label-File-Waiting-For-Size="Вычисление размера"
+                                           data-accepted-file-types="['video/mp4']"
+                                           data-label-Max-File-Size="Максимальный размер файла {filesize}"
+                                           data-label-Max-File-Size-Exceeded="Файл слишком большой"
+                                           data-allow-reorder="false"
+                                           data-max-file-size="150MB"
+                                           accepted-file-types="video/mp4"
+                                           label-file-type-not-allowed="Неверный формат файла"
+                                           file-validate-type-label-expected-types="Допустимые форматы: mp4"
+                                           data-label-idle='<div style="display: flex;-webkit-box-align: center;
+                                   align-items: center;"><i class="display-4 text-muted
+                                   ri-upload-cloud-2-fill" style="font-size: 26px;margin-right: 12px;">
+                                   </i>Переместите файлы сюда
+                                    </div>'
+                                           data-max-files="1">
+                                </div>
+                                <div class="loading-bar">
+                                    <i class="mdi mdi-spin mdi-loading"></i>
+                                </div>
+
+
+                                <br>
+                            </div>
+                            <div id="qr_area" style="
+                                    text-align: center;
+                                    margin-bottom: 15px;
+                                    margin-top: 15px;">
+                                <img id="project_qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://xr.mix-ar.ru/q?id=1189" style="max-width: 200px;">
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal"
+                                        id="close_marker_button2">Закрыть</button>
+                                <button type="button" class="btn btn-primary "
+                                        id="add_marker_button2" disabled>Добавить</button>
+                            </div>
+
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <div id="objectModal" class="modal fade " tabindex="-1" aria-labelledby="myModal2Label" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="objectModalLabel">Добавить новый 3D-маркер</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div>
+                                    <label for="basiInput" class="form-label">ID маркера</label>
+                                    <input type="number" step="1" pattern="\d+" class="form-control" style="margin-bottom: 12px;"
+                                           id="object_id_input"  placeholder="Введите id маркера">
+
+                                    <p style="
+                                    text-align: center;
+                                    /* font-size: 17px; */
+"><br>Чтобы отсканировать объект, скачайте приложение-сканер (APK, сканер временно доступен только для Android):<br><a href="https://www.youtube.com/watch?v=x8Ly3FApN1w" target="_blank">Видео-инструкция</a>
+
+                                        <br><img id="" src="https://api.qrserver.com/v1/create-qr-code/?data=https://editor.mix-ar.ru/assets/apk/MIXAR_Object_scanner.apk&amp;color=0075ff&amp;bgcolor=fff&amp;qzone=1&amp;margin=0&amp;size=500x500&amp;ecc=L" style="width: 100%;cursor:pointer;max-width: 200px;margin-top: 6px;"><br><a target="_blank" href="assets/apk/MIXAR_Object_scanner.apk" class="btn btn-soft-primary" id="qr_svg" style="
+                                        width: 100%;
+                                        margin-top: 8px;
+                                        max-width: 200px;
+                        ">Скачать</a>
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal"
+                                        id="close_object_button">Закрыть</button>
+                                <button type="button" class="btn btn-primary " data-bs-dismiss="modal"
+                                        id="add_object_button" disabled>Добавить</button>
+                            </div>
+
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <div id="learningModal" class="modal  fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-xl  modal-dialog-centered">
+                        <div class="modal-content" style="border: 0; ">
+                            <i class=" bx bx-x" data-bs-dismiss="modal" aria-label="Закрыть" style="position: absolute;right: -30px;top: -30px;color: #fff;font-size: 30px; cursor: pointer"></i>
+                            <div class="row p-0" style="--vz-gutter-x: 0; overflow: hidden; border-radius: 4px">
+                                <div class="col-9 p-0" style=""><div class="ratio ratio-16x9">
+                                    <!--<iframe src="https://www.youtube.com/embed/QyrfeZbWB_Q" title="YouTube video" allowfullscreen=""></iframe>-->
+                                    <iframe id="lesson_iframe" src="https://www.youtube.com/embed/ExpYieX-uJw?si=67UZe1geGYGnOV6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                </div></div>
+                                <div class="col-3 p-0">
+
+                                    <div  class="ratio " style="width: 100%;--vz-aspect-ratio: 168.75%; ">
+                                        <div style="width: 100%;height: 100%;" ><div style="height: 100%; width:100%" data-simplebar>
+                                            <div class="accordion accordion-flush" id="learning">
+
+                                                <div class="card-body border-bottom">
+                                                    <div>
+                                                        <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Начало работы</p>
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li>
+                                                                <a onclick="open_lesson(1,'https://www.youtube.com/embed/ExpYieX-uJw?si=67UZe1geGYGnOV6A')" class="d-flex pb-3 pt-2">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0 active_lesson lesson lesson1" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Знакомство с редактором</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a onclick="open_lesson(2,'https://www.youtube.com/embed/XJoOhXZZ0IM?si=q5G8RT0b6D6d54IO')" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0  lesson lesson2" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Добавление объектов на сцену</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a onclick="open_lesson(3,'https://www.youtube.com/embed/HVf5qRDJ2ug?si=Ips8VXcqCs8vjra9')" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0  lesson lesson3" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Загрузка моделей со Sketchfab</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a onclick="open_lesson(4,'https://www.youtube.com/embed/N9SddUx6yJ0?si=v-4PHUJl2lCcx3Vf')" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0  lesson lesson4" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Виды привязок</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a onclick="open_lesson(5,'https://www.youtube.com/embed/dZ9Ol4_0XM4?si=CHS0fLIw3eRVDKZu')" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0  lesson lesson5" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Настройки сцены</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a onclick="open_lesson(6,'https://www.youtube.com/embed/y_2LEUfvKYg?si=U_O9Kyrorfu-S1sF')" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0  lesson lesson6" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Создание оживающих фотографий за 1 минуту</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a onclick="open_lesson(7,'https://www.youtube.com/embed/SjS6gE-Y1p8?si=PiLkAGE-Y2p67KTy')" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0  lesson lesson7" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Создание проекта с точками интереса</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a onclick="open_lesson(8,'https://www.youtube.com/embed/x8Ly3FApN1w?si=x-xZI80rZJXp2RDi')" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0  lesson lesson8" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>
+                                                                            <i class="ri-play-fill px-2"></i>Создание проекта с пошаговыми инструкциями</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--<div class="card-body border-bottom">
+                                                    <div>
+                                                        <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Типы привязок контента</p>
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3 pt-2">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>Привязка к горизонтальной плоскости</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Привязка к вертикальной плоскости</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Привязка к изображению</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-body border-bottom">
+                                                    <div>
+                                                        <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Добавление контента</p>
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3 pt-2">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>Добавление 3D моделей</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление изображений</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление звуков</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление видео</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3 ">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление текста</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление фигур</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-body border-bottom">
+                                                    <div>
+                                                        <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Создание интерактива</p>
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3 pt-2">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>Создание простого интерактива</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Обзор видов интерактива</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="d-flex pb-3">
+                                                                    <div class="flex-grow-1">
+                                                                        <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                            <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Пример создания мини-игры</h5>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>-->
+
+
+
+                                            </div>
+
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!--<div id="myModal" class="modal  fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-xl  modal-dialog-centered">
+                            <div class="modal-content" style="border: 0; ">
+                                <i class=" bx bx-x" data-bs-dismiss="modal" aria-label="Закрыть" style="position: absolute;right: -30px;top: -30px;color: #fff;font-size: 30px; cursor: pointer"></i>
+                               <div class="row p-0" style="&#45;&#45;vz-gutter-x: 0; overflow: hidden; border-radius: 4px">
+                                  <div class="col-9 p-0" style=""><div class="ratio ratio-16x9">
+                                    &lt;!&ndash;<iframe src="https://www.youtube.com/embed/QyrfeZbWB_Q" title="YouTube video" allowfullscreen=""></iframe>&ndash;&gt;
+                                </div></div>
+                                  <div class="col-3 p-0">
+                                   
+                                      <div  class="ratio " style="width: 100%;&#45;&#45;vz-aspect-ratio: 168.75%; ">
+                                         <div style="width: 100%;height: 100%;" ><div style="height: 100%; width:100%" data-simplebar>
+                                          <div class="accordion accordion-flush" id="learning">
+
+                                    <div class="card-body border-bottom">
+                                        <div>
+                                            <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Знакомство с платформой</p>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3 pt-2">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;color:#0075ff">
+                                                                <i class="ri-play-fill px-2"></i>Возможности платформы</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>Создание дополненной реальности за 30 секунд</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Редактирование сцены</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Загрузка контента</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <div>
+                                            <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Типы привязок контента</p>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3 pt-2">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>Привязка к горизонтальной плоскости</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Привязка к вертикальной плоскости</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Привязка к изображению</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-body border-bottom">
+                                        <div>
+                                            <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Добавление контента</p>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3 pt-2">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>Добавление 3D моделей</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление изображений</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление звуков</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление видео</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3 ">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление текста</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Добавление фигур</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-body border-bottom">
+                                        <div>
+                                            <p class="text-muted text-uppercase fs-13 fw-medium mb-2">Создание интерактива</p>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3 pt-2">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2" style="padding-top: 1px" ></i>Создание простого интерактива</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Обзор видов интерактива</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex pb-3">
+                                                        <div class="flex-grow-1">
+                                                            <h5 class="fs-14 mb-0" style="display: flex;">
+                                                                <i class="bx bx-minus px-2"  style="padding-top: 1px" ></i>Пример создания мини-игры</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                          </div></div>
+                                      </div>
+                                   </div>
+</div>
+
+                            </div>&lt;!&ndash; /.modal-content &ndash;&gt;
+                        </div>&lt;!&ndash; /.modal-dialog &ndash;&gt;
+                    </div>&lt;!&ndash; /.modal &ndash;&gt;-->
+                   
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © MIXAR
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Все права защищены
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- removeProjectModal -->
+    <div id="removeProjectModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="close-modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-2 text-center">
+                        <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop"
+                            colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                        <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                            <h4>Удалить проект?</h4>
+                            <p class="text-muted mx-4 mb-0">Вы уверены, что хотите удалить проект?</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                        <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn w-sm btn-danger" id="remove-project">Да, Удалить!</button>
+                    </div>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- project list init -->
+    <script src="assets/js/pages/project-list.init.js"></script>
+
+    <!-- dropzone min -->
+    <script src="assets/libs/dropzone/dropzone-min.js"></script>
+    <!-- filepond js -->
+    <script src="assets/libs/filepond/filepond.min.js"></script>
+    <script src="assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.js"></script>
+    <script src="assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js"></script>
+    <script src="assets/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js"></script>
+    <script src="assets/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js"></script>
+    <script src="assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js"></script>
+
+    <script src="assets/js/pages/form-file-upload.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/auth.js"></script>
+    <script>
+        load_user_info()
+    </script>
+    <script>
+        const ANCHOR_TYPES = {
+            MarkerHorizontal : 0,
+            MarkerVertical : 1,
+            PlaneHorizontal: 2,
+            PlaneVertical: 3,
+            CloudAnchor: 4
+        }
+        var scene = {
+            "scenes":[{
+                "id": "scene1", "sceneSettings": {
+                    "autoPlacement": false,
+                    "capture": false,
+                    "showTips": false,
+                    "analytics": false,
+                    "sceneScale": 0.00,
+                    "hdrMapUrl": "",
+                    "enableDepthOcclusion": false
+                },
+                anchors: [{"id": "1", "type": 3}],
+                "interactive": [],
+                "objects": []
+            }]
+        }
+        $(".project_type").on("click",function(){
+            var project_type = $(this).attr("id");
+            $(".project_type.selected").removeClass("selected");
+            $(this).addClass("selected");
+            $("#project_name_input").removeAttr("disabled")
+            if(project_type == "project_image_tracking"){
+                //alert(project_type)
+                $("#project_name_input").val("Проект с трекингом изображений")
+                $("#create_marker").css("display", "inline-block")
+                $("#create_plane_project").css("display","none")
+                $("#create_marker").removeAttr("disabled");
+            }
+            else {
+                //alert(project_type)
+                $("#create_marker").css("display","none")
+                $("#create_plane_project").css("display", "inline-block")
+                $("#create_plane_project").removeAttr("disabled");
+                if(project_type == "project_vertical_tracking")
+                    $("#project_name_input").val("Проект с трекингом вертикальных плоскостей")
+                else {
+                    if(project_type == "project_horizontal_tracking")
+                        $("#project_name_input").val("Проект с трекингом горизонтальных плоскостей")
+                    else {
+                        $("#project_name_input").val("Проект с трекингом объектов")
+                        $("#create_plane_project").css("display","none")
+                        $("#create_object_project").css("display", "inline-block")
+                        $("#create_object_project").removeAttr("disabled");
+                    }
+                }
+            }
+
+        })
+        $(".project_mode").on("click",function(){
+            var project_mode = $(this).attr("id");
+            $(".project_mode.selected").removeClass("selected");
+            $(this).addClass("selected");
+            if(project_mode == "project_pro"){
+                $("#create_marker_pro").css("display", "inline-block")
+                $("#create_marker_light").css("display","none")
+                $("#create_marker_pro").removeAttr("disabled");
+            }
+            else {
+                $("#create_marker_light").css("display", "inline-block")
+                $("#create_marker_pro").css("display","none")
+                $("#create_marker_light").removeAttr("disabled");
+            }
+            $("#project_qr").attr("src","");
+            $("#markerModal2 .modal-body").css("display","block")
+            $("#qr_area").css("display","none")
+
+        })
+        $("#create_plane_project").on("click",function(){
+            var project_type = $(".project_type.selected").attr("id");
+            var type;
+            var img = "assets/images/projects/plane_h.jpg";
+            if(project_type == "project_horizontal_tracking") {
+                type = ANCHOR_TYPES.PlaneHorizontal;
+            }
+            else {
+                type = ANCHOR_TYPES.PlaneVertical;
+                img = "assets/images/projects/plane_v.jpg";
+            }
+            var name = $("#project_name_input").val();
+            make_anchor(0,type,function(anchors){
+                scene.scenes[0].anchors = anchors;
+                postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                    '&description=description&visibility=0',
+                    JSON.stringify(scene), {
+                        'Content-Type': 'application/json',
+                        "Authorization": "Bearer "+getCookie("token")
+                })
+                    .then((res) => {
+                        console.log(res)
+                        createProject(res, name, img,function(hash){
+                            location.href="editor5445.html?id="+hash;
+                        })
+                    });
+            });
+        })
+
+
+        $("#add_object_button").on("click",function(){
+            var type = ANCHOR_TYPES.CloudAnchor;
+            var name = $("#project_name_input").val();
+            make_anchor($("#object_id_input").val(),type,function(anchors){
+                scene.scenes[0].anchors = anchors;
+                postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                    '&description=description&visibility=0',
+                    JSON.stringify(scene), {
+                        'Content-Type': 'application/json',
+                        "Authorization": "Bearer "+getCookie("token")
+                    })
+                    .then((res) => {
+                        console.log(res)
+                        createProject(res, name, "assets/images/object_tracking.jpg",function(hash){
+                            location.href="editor5445.html?id="+hash;
+                        })
+                    });
+            });
+        })
+
+        var object_id_input = document.getElementById("object_id_input");
+        object_id_input.addEventListener('input', function(element) {
+            this.value = parseInt(this.value);
+            if($("#object_id_input").val()!=0)
+                $("#add_object_button").removeAttr("disabled");
+            else
+                $("#add_object_button").attr("disabled",true);
+        })
+
+        function cloneProject(name, image, project_id){
+            $.ajax('https://mixar-api.ru/project/'+project_id+'/data',   // request url
+                {
+                    success: function (data, status, xhr) {// success callback function
+                        postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                            '&description=description&visibility=0',
+                            data, {
+                                'Content-Type': 'application/json',
+                                "Authorization": "Bearer "+getCookie("token")
+                            })
+                            .then((res) => {
+                                console.log(res)
+                                createProject(res, name, image,function(hash){
+                                    location.href="editor5445.html?id="+hash;
+                                })
+                            });
+                    }
+                });
+
+        }
+
+
+
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            let expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        FilePond.registerPlugin(FilePondPluginFileValidateType);
+        FilePond.registerPlugin(FilePondPluginFileValidateSize);
+        FilePond.registerPlugin(FilePondPluginImagePreview);
+        async function getAsByteArray(file,callback) {
+            return new Uint8Array(await readFile(file))
+            //callback(new Uint8Array(await readFile(file));
+        }
+        function readFile(file) {
+            return new Promise((resolve, reject) => {
+                // Create file reader
+                let reader = new FileReader()
+
+                // Register event listeners
+                reader.addEventListener("loadend", e => resolve(e.target.result))
+                reader.addEventListener("error", reject)
+
+                // Read file
+                reader.readAsArrayBuffer(file)
+            })
+        }
+        async function postData(url = '', data = {}, _headers = {'Content-Type': 'application/octet-stream'}) {
+            // Default options are marked with *
+            const response = await fetch(url, {
+                method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                mode: 'cors', // no-cors, *cors, same-origin
+                cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                credentials: 'same-origin', // include, *same-origin, omit
+                headers: _headers,
+                redirect: 'follow', // manual, *follow, error
+                referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                body: data
+            });
+            return response.json(); // parses JSON response into native JavaScript objects
+        }
+        var close_marker_button = $("#close_marker_button");
+        var add_marker_button = $("#add_marker_button");
+        var marker_name_input = $("#marker_name_input");
+        var marker_size_x_input = $("#marker_size_x_input");
+        var marker_size_y_input = $("#marker_size_y_input");
+        var marker_orientation_input = $("#marker_orientation_input");
+        var uploading_marker_asp_rat = 1.0;
+        var marker_pond = FilePond.create(document.querySelector('#uploadmarker'), {
+            acceptedFileTypes: ['image/png', 'image/jpeg'],
+            fileValidateTypeDetectType: (source, type) =>
+                new Promise((resolve, reject) => {
+                    //alert(resolve)
+                    // Do custom type detection here and return with promise
+
+                    resolve(type);
+                })
+
+        });
+        marker_pond.on('addfile', (error,file) => {
+            if (error) {
+                console.log('Oh no');
+                return;
+            }
+            var filename =  marker_pond.getFile().filename;
+            console.log('File added',filename);
+            marker_name_input.removeAttr("disabled");
+            add_marker_button.removeAttr("disabled");
+            marker_size_x_input.removeAttr("disabled");
+            marker_size_y_input.removeAttr("disabled");
+            marker_orientation_input.removeAttr("disabled");
+            marker_name_input.val(filename);
+            var reader = new FileReader();
+            reader.readAsDataURL(marker_pond.getFile().file);
+            reader.onload = function (e) {
+
+                //Initiate the JavaScript Image object.
+                var image = new Image();
+
+                //Set the Base64 string return from FileReader as source.
+                image.src = e.target.result;
+
+                //Validate the File Height and Width.
+                image.onload = function () {
+                    uploading_marker_asp_rat = 1.0*this.width/this.height;
+                    marker_size_x_input.val("20.0");
+                    marker_size_y_input.val(20.0/uploading_marker_asp_rat+"");
+
+                };
+            };
+        });
+        document.getElementById("marker_size_x_input").addEventListener("input",function(){
+            if(marker_size_x_input.val()!="" && parseFloat(marker_size_x_input.val())>0)
+                marker_size_y_input.val(parseFloat(marker_size_x_input.val())/uploading_marker_asp_rat);
+            else
+                marker_size_y_input.val("0.0");
+        });
+        document.getElementById("marker_size_y_input").addEventListener("input",function(){
+            if(marker_size_y_input.val()!="" && parseFloat(marker_size_y_input.val())>0)
+                marker_size_x_input.val(parseFloat(marker_size_y_input.val())*uploading_marker_asp_rat);
+            else
+                marker_size_x_input.val("0.0");
+        });
+        marker_size_x_input.on("blur",function(){
+            if(parseFloat(marker_size_x_input.val())<=0 || marker_size_x_input.val() == "") {
+                marker_size_x_input.val("20.0");
+                marker_size_y_input.val(20.0/uploading_marker_asp_rat+"");
+            }
+
+        })
+        marker_size_y_input.on("blur",function(){
+            if(parseFloat(marker_size_y_input.val())<=0 || marker_size_y_input.val() == "") {
+                marker_size_x_input.val("20.0");
+                marker_size_y_input.val(20.0/uploading_marker_asp_rat+"");
+            }
+
+        })
+        marker_pond.on('removefile',(error,file) => {
+            if (error) {
+                console.log('Oh no');
+                return;
+            }
+            marker_name_input.attr("disabled","");
+            add_marker_button.attr("disabled","");
+            marker_name_input.val("");
+            marker_size_x_input.attr("disabled","");
+            marker_size_y_input.attr("disabled","");
+            marker_size_x_input.val("");
+            marker_size_y_input.val("");
+            marker_orientation_input.attr("disabled","");
+        });
+
+        add_marker_button.on("click",async function(){
+            $("#markerModal .upload_area").css("display","none");
+            $("#markerModal .loading-bar").css("display","block");
+            marker_name_input.attr("disabled","");
+            add_marker_button.attr("disabled","");
+            const selectedFile = marker_pond.getFile().file;
+            const byteFile = await getAsByteArray(selectedFile);
+            postData('https://mixar-api.ru/asset?name='+encodeURI(marker_name_input.val())
+                +'&type=image&extension='+marker_pond.getFile().fileExtension, byteFile, {
+                'Content-Type': 'application/json',
+                "Authorization": "Bearer "+getCookie("token")
+            })
+                .then((id) => {
+
+                    var name = $("#project_name_input").val();
+                    var type;
+                    if(marker_orientation_input.val()=="Horizontal")
+                        type = ANCHOR_TYPES.MarkerHorizontal
+                    else
+                        type = ANCHOR_TYPES.MarkerVertical
+                    make_anchor(id,type,function(anchors){
+                        scene.scenes[0].anchors = anchors;
+                        postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                            '&description=description&visibility=0&ownerId=1',
+                            JSON.stringify(scene), {
+                                'Content-Type': 'application/json',
+                                "Authorization": "Bearer "+getCookie("token")
+                            })
+                            .then((res) => {
+                                //alert(JSON.stringify(res));
+                                createProject(res, name, "assets/images/projects/image.jpg",function(hash){
+                                    location.href="editor5445.html?id="+hash;
+                                })
+                            });
+                    });
+                    close_marker_button.click();
+                    marker_name_input.val("");
+                    $("#markerModal .upload_area").css("display","block");
+                    $("#markerModal .loading-bar").css("display","none");
+                    var pond_ids = [];
+                    if (marker_pond.getFiles().length != 0) {  // "pond" is an object, created by FilePond.create
+                        marker_pond.getFiles().forEach(function(file) {
+                            pond_ids.push(file.id);
+                        });
+                    }
+                    marker_pond.removeFiles(pond_ids);
+                    marker_name_input.attr("disabled","");
+                    add_marker_button.attr("disabled","");
+                });
+
+        })
+        function make_anchor(contentId,type,callback) {
+            let anchors;
+            if(type==ANCHOR_TYPES.MarkerVertical || type==ANCHOR_TYPES.MarkerHorizontal)
+                anchors =
+                [{
+                    "id": "marker1", "type": type, "contentId": contentId,
+                    "markerWidth": parseFloat(marker_size_x_input.val())/100.0,
+                    "markerName": marker_name_input.val()
+                }]
+            if(type==ANCHOR_TYPES.PlaneVertical || type==ANCHOR_TYPES.PlaneHorizontal)
+                anchors =
+                [{
+                    "id": "1", "type": type
+                }]
+            if(type==ANCHOR_TYPES.CloudAnchor)
+                anchors =
+                    [{
+                        "id": "cloudanchor1", "type": type,
+                        "cloudAnchorId": contentId,
+                        "contentId": contentId
+                    }]
+            //   "contentId": 66, "markerWidth": 1, "markerName": "123"
+            callback(anchors)
+        }
+
+        /////////////////////////////////////
+
+
+        var close_marker_button2 = $("#close_marker_button2");
+        var add_marker_button2 = $("#add_marker_button2");
+        var image_loaded = false;
+        var video_loaded = false;
+
+        var marker_pond2 = FilePond.create(document.querySelector('#uploadmarker2'), {
+            acceptedFileTypes: ['image/png', 'image/jpeg'],
+            fileValidateTypeDetectType: (source, type) =>
+                new Promise((resolve, reject) => {
+                    //alert(resolve)
+                    // Do custom type detection here and return with promise
+
+                    resolve(type);
+                })
+
+        });
+        marker_pond2.on('addfile', (error,file) => {
+            if (error) {
+                console.log('Oh no');
+                return;
+            }
+            var filename =  marker_pond2.getFile().filename;
+            console.log('File added',filename);
+            //
+            var reader2 = new FileReader();
+            reader2.readAsDataURL(marker_pond2.getFile().file);
+            reader2.onload = function (e) {
+                image_loaded = true;
+                check_light_content()
+
+            };
+        });
+
+
+        marker_pond2.on('removefile',(error,file) => {
+            if (error) {
+                console.log('Oh no');
+                return;
+            }
+
+            image_loaded = false;
+            check_light_content()
+            add_marker_button2.attr("disabled","");
+        });
+
+        var video_pond = FilePond.create(document.querySelector('#uploadvideo'), {
+            acceptedFileTypes: ['video/mp4' ],
+            fileValidateTypeDetectType: (source, type) =>
+                new Promise((resolve, reject) => {
+                    //alert(resolve)
+                    // Do custom type detection here and return with promise
+
+                    resolve(type);
+                })
+
+        });
+        video_pond.on('addfile', (error, file) => {
+
+            console.log("[addfile]")
+            if (error) {
+                console.log('Oh no');
+                return;
+            }
+            var filename = video_pond.getFile().filename;
+            video_loaded = true;
+            check_light_content()
+        });
+        video_pond.on('removefile', (error, file) => {
+            if (error) {
+                console.log('Oh no');
+                return;
+            }
+            video_loaded = false;
+            check_light_content()
+        });
+
+        function get_video_aspect_ratio(url,callback){
+            const video = document.createElement('video');
+            video.src = url;
+            video.addEventListener( "loadedmetadata", function (e) {
+                callback(1.0*this.videoWidth/this.videoHeight);
+            }, false );
+        }
+        function check_light_content(){
+            if(image_loaded && video_loaded)
+                add_marker_button2.removeAttr("disabled");
+            else {
+                add_marker_button2.attr("disabled","");
+            }
+        }
+        add_marker_button2.on("click",async function(){
+            $("#markerModal2 .upload_area").css("display","none");
+            $("#markerModal2 .loading-bar").css("display","block");
+            add_marker_button2.attr("disabled","");
+            const selectedFile2 = marker_pond2.getFile().file;
+            const byteFile2 = await getAsByteArray(selectedFile2);
+            postData('https://mixar-api.ru/asset?name='+encodeURI("marker1")
+                +'&type=image&extension='+marker_pond2.getFile().fileExtension, byteFile2, {
+                'Content-Type': 'application/json',
+                "Authorization": "Bearer "+getCookie("token")
+            })
+                .then(async (id) => {
+                    var marker_url = "https://mixar-api.ru/data-dev/"+id+"."+marker_pond2.getFile().fileExtension;
+                    console.log("marКker_url "+marker_url)
+                    const selectedFile = video_pond.getFile().file;
+                    const byteFile = await getAsByteArray(selectedFile);
+                    console.log("Video start loading")
+                    postData('https://mixar-api.ru/asset?name='+encodeURI("video1")
+                        +'&type=video&extension='+video_pond.getFile().fileExtension, byteFile, {
+                        'Content-Type': 'application/json',
+                        "Authorization": "Bearer "+getCookie("token")
+                    })
+                        .then((content_id) => {
+                            console.log("Video loaded")
+                            $("#videoModal .upload_area").css("display","block");
+                            $("#videoModal .loading-bar").css("display","none");
+                            var pond_ids = [];
+                            var url = "https://mixar-api.ru/data-dev/"+content_id+"."+video_pond.getFile().fileExtension;
+                            console.log("URL "+url)
+                            if (video_pond.getFiles().length != 0) {  // "pond" is an object, created by FilePond.create
+                                video_pond.getFiles().forEach(function(file) {
+                                    pond_ids.push(file.id);
+                                });
+                            }
+                            video_pond.removeFiles(pond_ids)
+                            var rotation = {"x":0,"y":0,"z":0}
+                            var position = {
+                                x: 0,
+                                y: 0,
+                                z: 0.0001
+                            }
+                            get_video_aspect_ratio(url,function(asp_rat) {
+                                var name = $("#project_name_input").val();
+                                var photo_scene = {"scenes":[{"id":"scene1","sceneSettings":{"autoPlacement":false,"capture":true,"showTips":false,"analytics":false,"sceneScale":0,"hdrMapUrl":"","enableDepthOcclusion":false},"anchors":[{"id":"marker1","type":0,"contentId":id,"markerWidth":0.2,"markerName":"Маркер1.jpg"}],"interactive":[],"objects":[{"id":"eb44eb1e-10ae-4893-a30c-b51258392f1f","name":"Клип1.mp4","enabled":true,"type":2,"transform":{"parentId":"marker1","position":{"x":0,"y":0.0001,"z":0},"rotation":{"x":-90,"y":180,"z":0},"scale":{"x":0.2,"y":0.2/asp_rat,"z":1},"boneIndex":-1,"bonesNames":[]},"renderer":{"emission":{"color":{"r":0,"g":0,"b":0,"a":0},"intensive":0},"visible":true,"shadowCast":true,"billboard":false,"opacity":1,"materials":[{"texture":{"contentId":0,"tiling":{"x":1,"y":1},"isVideo":false},"doublesided":false,"name":"glTF-Default-Material (Instance) | Plane001","shaderId":0,"color":{"r":1,"g":1,"b":1,"a":1},"roughness":-1,"metallic":-1,"zWrite":true,"renderQueue":-1,"cullMode":0,"id":"4cb3479b-33f0-4c5e-8cfe-74d692a9f8bc","alphaCutoff":0.5}],"color":{"r":1,"g":1,"b":1,"a":1},"isOcclusion":null},"model":{"contentId":98,"playOnAwake":false,"animations":[]},"video":{"contentId":content_id,"volume":1,"loop":true,"playOnAwake":true,"chromakey":false},"manipulation":{"movable":false,"sizable":false,"rotatable":false,"heightCorrection":false}}]}],"webViewUrl":"https://editor.mix-ar.ru/mainui.php"}
+
+                                postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                                    '&description=description&visibility=0&ownerId=1',
+                                    JSON.stringify(photo_scene), {
+                                        'Content-Type': 'application/json',
+                                        "Authorization": "Bearer "+getCookie("token")
+                                    })
+                                    .then((res) => {
+                                        //alert(JSON.stringify(res));
+                                        createProject(res, name, marker_url,function(hash){
+                                            //location.href="editor.html?id="+hash;
+                                            console.log("project_id "+res)
+                                            console.log("https://xr.mix-ar.ru/q?id="+res)
+                                            show_qr("https://api.qrserver.com/v1/create-qr-code/?data=https://xr.mix-ar.ru/q?id="+res)
+                                            $("#markerModal2 .upload_area").css("display","block");
+                                            $("#markerModal2 .loading-bar").css("display","none");
+                                        })
+                                    });
+                                //close_marker_button2.click();
+
+                                var pond_ids2 = [];
+                                if (marker_pond2.getFiles().length != 0) {  // "pond" is an object, created by FilePond.create
+                                    marker_pond2.getFiles().forEach(function(file) {
+                                        pond_ids2.push(file.id);
+                                    });
+                                }
+                                marker_pond2.removeFiles(pond_ids2);
+                                add_marker_button2.attr("disabled","");
+
+
+
+                            })
+                        });
+
+
+
+
+
+
+
+
+                });
+
+        })
+        function show_qr(qr_url){
+            $("#project_qr").attr("src",qr_url);
+            $("#markerModal2 .modal-body").css("display","none")
+            $("#qr_area").css("display","block")
+        }
+        function make_anchor2(contentId,type,callback) {
+            let anchors;
+            if(type==ANCHOR_TYPES.MarkerVertical || type==ANCHOR_TYPES.MarkerHorizontal)
+                anchors =
+                    [{
+                        "id": "marker1", "type": type, "contentId": contentId,
+                        "markerWidth": parseFloat(marker_size_x_input.val())/100.0,
+                        "markerName": marker_name_input.val()
+                    }]
+            if(type==ANCHOR_TYPES.PlaneVertical || type==ANCHOR_TYPES.PlaneHorizontal)
+                anchors =
+                    [{
+                        "id": "1", "type": type
+                    }]
+            if(type==ANCHOR_TYPES.CloudAnchor)
+                anchors =
+                    [{
+                        "id": "cloudanchor1", "type": type,
+                        "cloudAnchorId": contentId,
+                        "contentId": contentId
+                    }]
+            //   "contentId": 66, "markerWidth": 1, "markerName": "123"
+            callback(anchors)
+        }
+
+        //////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+        function isString(x) {
+            return Object.prototype.toString.call(x) === "[object String]"
+        }
+
+
+        function registr_allownumericwithdecimal(obj){
+            $(obj).on("keypress keyup blur",function (event) {
+                if($(obj).hasClass("positive"))
+                    $(this).val($(this).val().replace(/[^0-9\.]/g,''));
+                else
+                    $(this).val($(this).val().replace(/[^0-9\.-]/g,''));
+                if($(this).val().indexOf('-') != -1)
+                    $(this).val($(this).val().replace(/^.+-/,'-'));
+                //alert(event.which)
+                //- = 45 . = 190
+                if ((event.which != 46 || $(this).val().indexOf('.') != -1)
+                    && (event.which < 48 || event.which > 57) && event.which !=45) {
+                    event.preventDefault();
+                }
+                $(this).trigger("change");
+            });
+
+            $(obj).on("keypress",function (event) {
+                if (event.key === "Enter") {
+                    if($(this).val() == "")
+                        $(this).val("0")
+                }
+            });
+            $(obj).on("blur",function (event) {
+
+                if($(this).val() == "" || $(this).val() == "-"){
+                    if($(obj).hasClass("maybenull"))
+                        $(this).val("-")
+                    else
+                        $(this).val("0")
+                }
+                $(this).trigger("change");
+            });
+            regist_input_selection(obj);
+        }
+        function regist_input_selection(obj){
+            $(obj).on("focus",function(){
+                $(this).select();
+            });
+        }
+        registr_allownumericwithdecimal($(".allownumericwithdecimal"));
+
+        function componentToHex(c) {
+            var hex = c.toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
+        }
+        function rgbToHex(r, g, b) {
+            return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        }
+        String.prototype.convertToRGB = function(){
+            if(this.length != 6){
+                throw "Only six-digit hex colors are allowed.";
+            }
+
+            var aRgbHex = this.match(/.{1,2}/g);
+            var aRgb = [
+                parseInt(aRgbHex[0], 16),
+                parseInt(aRgbHex[1], 16),
+                parseInt(aRgbHex[2], 16)
+            ];
+            return aRgb;
+        }
+        function createProject(project_id, title, image,callback) {
+            var token = getCookie("token"); // Получаем токен из cookie
+
+            $.ajax({
+                url: "server/addProject.php",
+                type: "POST",
+                data: {
+                    token: token,
+                    title: title,
+                    image: image,
+                    project_id: project_id
+                },
+                dataType: "json", // Указываем, что ожидаем ответ в формате JSON
+                success: function(response) {
+                    // Проверяем результат выполнения
+                    if (response.result === "success") {
+                        // Выводим сообщение об успешном создании проекта
+                        console.log("Project created successfully", response);
+                        callback(response.hash)
+                        //alert("Проект успешно создан. Hash: " + response.hash);
+                    } else if (response.result === "error") {
+                        // Выводим сообщение об ошибке от сервера
+                        console.error("Error creating project", response.error);
+                        alert("Ошибка: " + response.error);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    // Обработка ошибки запроса
+                    console.error("Error creating project", error);
+                    alert("Ошибка запроса: " + error);
+                }
+            });
+        }
+        function getProjects(callback) {
+            console.log("getProjects")
+            var token = getCookie("token"); // Получаем токен из cookie
+            if(token != "") {
+                console.log(token)
+                $.ajax({
+                    url: "server/getProjects.php",
+                    type: "GET",
+                    data: {
+                        token: token
+                    },
+                    dataType: "json", // Указываем, что ожидаем ответ в формате JSON
+                    success: function (response) {
+                        // Проверяем результат выполнения
+                        if (response.result === "success") {
+                            // Выводим сообщение об успешном создании проекта
+                            console.log("Projects got successfully", response);
+                            callback(response.projects)
+                            //alert("Проект успешно создан. Hash: " + response.hash);
+                        } else if (response.result === "error") {
+                            // Выводим сообщение об ошибке от сервера
+                            console.error("Error got projects", response.error);
+                            alert("Ошибка: " + response.error);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        // Обработка ошибки запроса
+                        console.error("Error got projects", error);
+                        alert("Ошибка запроса: " + error);
+                    }
+                });
+            }
+            else {
+                //location.href="signin.html"
+            }
+        }
+        getProjects(function(projects){
+            projects.forEach(function(project){
+                $("#project_list").prepend("<div class=\"col-xxl-3 col-sm-6 project-card\" id='"+project.hash+"'>\n" +
+                    "                            <div class=\"card \">\n" +
+                    "                                <div class=\"card-body\">\n" +
+                    "                                    <div class=\"p-3 mt-n3 mx-n3 bg-light rounded-top\" style=\"position: relative;padding: 0 !important;overflow: hidden;\">\n" +
+                    "                                        \n" +
+                    "                                        <a href=\"editor.html?id="+project.hash+"\" class=\"text-center pb-3\" style=\"padding: 0 !important;\">\n" +
+                    "                                            <img class='project_poster' src=\""+project.image+"\" alt=\"\" height=\"100\" style=\"\">\n" +
+                    "                                        </a>\n" +
+                    "                                    </div>\n" +
+                    "                                    <div class=\"py-3\" style=\"margin-bottom: 0px !important;\">\n" +
+                    "                                        <h5 class=\"mb-3 fs-15\" style=\"margin-bottom: 0.25rem!important;\"><a href=\"editor.html?id="+project.hash+"\" class=\"text-dark title\">"+project.title+"</a></h5><p class=\"text-muted mb-4\" style=\"margin: 0 !important;\">Изменено: "+formatDate(project.updated)+"</p>\n" +
+                    "                                        \n" +
+                    "\n" +
+                    "                                        \n" +
+                    "                                    </div>\n" +
+                    "                                    <div class='project_dropdown'>\n" +
+                    "                                        <div class=\"d-flex \">\n" +
+                    "                                            <div class=\"flex-grow-1\">\n" +
+                    "                                            </div>\n" +
+                    "                                            <div class=\"flex-shrink-0\">\n" +
+                    "                                                <div><div class=\"dropdown\">\n" +
+                    "                                                <button class=\"btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n" +
+                    "                                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-more-horizontal icon-sm\"><circle cx=\"12\" cy=\"12\" r=\"1\"></circle><circle cx=\"19\" cy=\"12\" r=\"1\"></circle><circle cx=\"5\" cy=\"12\" r=\"1\"></circle></svg>\n" +
+                    "                                                </button>\n" +
+                    "\n" +
+                    "                                                <div class=\"dropdown-menu dropdown-menu-end\" style=\"\">\n" +
+                    "                                                    \n" +
+                    "                                                    <a class=\"dropdown-item\" href=\"javascript:rename_project('"+project.title+"','"+project.hash+"')\" ><i class=\"ri-pencil-fill  align-bottom me-2 text-muted\"></i>\n" +
+                    "                                                        Переименовать</a>\n" +
+                    "                                                    <a class=\"dropdown-item\" href=\"javascript:cloneProject('"+project.title+"','"+project.image+"',"+project.id+")\" ><i class=\"ri-file-copy-fill  align-bottom me-2 text-muted\"></i>\n" +
+                    "                                                        Клонировать</a>\n" +
+                    "                                                    <a class=\"dropdown-item\" href=\"javascript:delete_project('"+project.hash+"')\" ><i class=\"ri-delete-bin-fill align-bottom me-2 text-muted\"></i>\n" +
+                    "                                                        Удалить</a>\n" +
+                    "                                                </div>\n" +
+                    "                                            </div></div>\n" +
+                    "                                            </div>\n" +
+                    "                                        </div>\n" +
+                    "                                    </div>\n" +
+                    "\n" +
+                    "                                </div>\n" +
+                    "                            </div>\n" +
+                    "                        </div>")
+            })
+            $("#create_new_project_card").css("display","block")
+        })
+        function formatDate(dateStr) {
+            const months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+            const date = new Date(dateStr);
+            const now = new Date();
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const yesterday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1);
+            const oneMonthAgo = new Date(now.getFullYear(), now.getMonth() - 1, now.getDate());
+
+            if (date >= today) {
+                return "Сегодня";
+            } else if (date >= yesterday) {
+                return "Вчера";
+            } else if (date >= oneMonthAgo) {
+                return `${date.getDate()} ${months[date.getMonth()]}`;
+            } else {
+                return "Больше месяца назад";
+            }
+        }
+        function rename_project(current_title, hash){
+            var token = getCookie("token"); // Получаем токен из cookie
+            let new_title = prompt('Введите новое название проекта', current_title);
+            if(new_title) {
+                $.ajax({
+                    url: "server/renameProject.php",
+                    type: "POST",
+                    data: {
+                        token: token,
+                        title: new_title,
+                        project_hash: hash
+                    },
+                    dataType: "json", // Указываем, что ожидаем ответ в формате JSON
+                    success: function (response) {
+                        console.log(response)
+                        // Проверяем результат выполнения
+                        if (response.result === "success") {
+                            // Выводим сообщение об успешном создании проекта
+                            console.log("Название проекта обновлено успешно", response);
+                            $("#"+hash+" .title").text(new_title)
+                            //alert("Проект успешно создан. Hash: " + response.hash);
+                        } else if (response.result === "error") {
+                            // Выводим сообщение об ошибке от сервера
+                            console.error("Ошибка при обновлении название проекта", response.error);
+                            alert("Ошибка: " + response.error);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        // Обработка ошибки запроса
+                        console.error("Ошибка при обновлении название проекта", error);
+                        alert("Ошибка запроса: " + error);
+                        console.log(error)
+                    }
+                });
+            }
+        }
+
+        function delete_project(hash){
+            var token = getCookie("token"); // Получаем токен из cookie
+            if(confirm("Удалить проект?")) {
+                $.ajax({
+                    url: "server/deleteProject.php",
+                    type: "POST",
+                    data: {
+                        token: token,
+                        project_hash: hash
+                    },
+                    dataType: "json", // Указываем, что ожидаем ответ в формате JSON
+                    success: function (response) {
+                        console.log(response)
+                        // Проверяем результат выполнения
+                        if (response.result === "success") {
+                            // Выводим сообщение об успешном создании проекта
+                            console.log("Проект удален успешно", response);
+                            $("#" + hash + "").remove()
+                            //alert("Проект успешно создан. Hash: " + response.hash);
+                        } else if (response.result === "error") {
+                            // Выводим сообщение об ошибке от сервера
+                            console.error("Ошибка при удалении проекта", response.error);
+                            alert("Ошибка: " + response.error);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        // Обработка ошибки запроса
+                        console.error("Ошибка при удалении проекта", error);
+                        alert("Ошибка запроса: " + error);
+                        console.log(error)
+                    }
+                });
+            }
+        }
+
+
+    </script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/lessons.js"></script>
+</body>
+
+
+<!-- Mirrored from editor.mix-ar.ru/main.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Oct 2025 15:56:32 GMT -->
+</html>

@@ -1,0 +1,19 @@
+
+.active_lesson {
+    color:#0075ff
+}
+.lesson {
+    cursor: pointer;
+}
+.lesson .ri-play-fill {
+    display:none;
+}
+.active_lesson .ri-play-fill {
+    display:block;
+}
+.lesson .bx.bx-minus {
+    display:block;
+}
+.active_lesson .bx.bx-minus {
+    display:none;
+}

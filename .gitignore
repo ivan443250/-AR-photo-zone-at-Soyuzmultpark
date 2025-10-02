@@ -1,5 +1,5 @@
 # Игнорировать всё
-TestARZappar/**
+SoyuzmultparkWebAR/**
 TestWebXR/**
 
 # Но не игнорировать папку Assets/WebGLBuild
@@ -13,14 +13,13 @@ TestWebXR/**
 !TestWebXR/Assets/_Project/
 !TestWebXR/Assets/_Project/**
 
-!TestARZappar/
-!TestARZappar/Assets/
-!TestARZappar/WebBuild/
-!TestARZappar/WebBuild/**
-!TestARZappar/Assets/Samples/
-!TestARZappar/Assets/Samples/**
-!TestARZappar/Assets/_Project/
-!TestARZappar/Assets/_Project/**
+!SoyuzmultparkWebAR/WebBuild/
+!SoyuzmultparkWebAR/WebBuild/**
+!SoyuzmultparkWebAR/Assets/
+!SoyuzmultparkWebAR/Assets/Samples/
+!SoyuzmultparkWebAR/Assets/Samples/**
+!SoyuzmultparkWebAR/Assets/_Project/
+!SoyuzmultparkWebAR/Assets/_Project/**
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1

@@ -1,0 +1,1149 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-sidebar="light" data-sidebar-size="lg">
+
+
+<!-- Mirrored from editor.mix-ar.ru/docs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Oct 2025 15:56:40 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>MIXAR WEB (Документация)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="WebAR Constructor" name="description" />
+    <meta content="" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+
+    <!--<script
+            src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>-->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- dropzone css -->
+    <link rel="stylesheet" href="assets/libs/dropzone/dropzone.css" type="text/css" />
+    <!--<link href="assets/css/editor.css" rel="stylesheet" type="text/css" />-->
+
+    <!-- Filepond css -->
+    <link rel="stylesheet" href="../unpkg.com/filepond%404.32.9/dist/filepond.min.css" type="text/css" />
+    <link rel="stylesheet" href="../unpkg.com/filepond-plugin-image-preview%404.6.12/dist/filepond-plugin-image-preview.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        /*@media (min-width: 1024.1px) {
+            [data-layout=horizontal] .page-content {
+                margin-top: 20px;
+            }
+        }*/
+    </style>
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <header id="page-topbar">
+        <div class="layout-width">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box horizontal-logo">
+                        <a href="main.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="" height="22">
+                        </span>
+                            <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="" height="17">
+                        </span>
+                        </a>
+
+                        <a href="main.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="" height="22">
+                        </span>
+                            <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="" height="17">
+                        </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                        id="topnav-hamburger-icon">
+                        <span class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-md-block" style="display: none !important">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                   id="search-options" value="">
+                            <span class="mdi mdi-magnify search-widget-icon"></span>
+                            <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                                  id="search-close-options"></span>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
+                            <div data-simplebar style="max-height: 320px;">
+                                <!-- item-->
+                                <div class="dropdown-header">
+                                    <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
+                                </div>
+
+                                <div class="dropdown-item bg-transparent text-wrap">
+                                    <a href="main.html" class="btn btn-soft-secondary btn-sm btn-rounded">how to setup <i
+                                            class="mdi mdi-magnify ms-1"></i></a>
+                                    <a href="main.html" class="btn btn-soft-secondary btn-sm btn-rounded">buttons <i
+                                            class="mdi mdi-magnify ms-1"></i></a>
+                                </div>
+                                <!-- item-->
+                                <div class="dropdown-header mt-2">
+                                    <h6 class="text-overflow text-muted mb-1 text-uppercase">Pages</h6>
+                                </div>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"></i>
+                                    <span>Analytics Dashboard</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></i>
+                                    <span>Help Center</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="ri-user-settings-line align-middle fs-18 text-muted me-2"></i>
+                                    <span>My account settings</span>
+                                </a>
+
+                                <!-- item-->
+                                <div class="dropdown-header mt-2">
+                                    <h6 class="text-overflow text-muted mb-2 text-uppercase">Members</h6>
+                                </div>
+
+                                <div class="notification-list">
+                                    <!-- item -->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-2.jpg"
+                                                 class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="m-0">Angela Bernier</h6>
+                                                <span class="fs-11 mb-0 text-muted">Manager</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- item -->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-3.jpg"
+                                                 class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="m-0">David Grasso</h6>
+                                                <span class="fs-11 mb-0 text-muted">Web Designer</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- item -->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-5.jpg"
+                                                 class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="m-0">Mike Bunch</h6>
+                                                <span class="fs-11 mb-0 text-muted">React Developer</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="text-center pt-3 pb-1">
+                                <a href="pages-search-results.html" class="btn btn-primary btn-sm">View All Results <i
+                                        class="ri-arrow-right-line ms-1"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-flex align-items-center">
+
+                    <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                        <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                                id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                            <i class="bx bx-search fs-22"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                             aria-labelledby="page-header-search-dropdown">
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                               aria-label="Recipient's username">
+                                        <button class="btn btn-primary" type="submit"><i
+                                                class="mdi mdi-magnify"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- <div class="dropdown ms-1 topbar-head-dropdown header-item">
+                         <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <img id="header-lang-img" src="assets/images/flags/us.svg" alt="Header Language" height="20"
+                                 class="rounded">
+                         </button>
+                         <div class="dropdown-menu dropdown-menu-end">
+
+                             &lt;!&ndash; item&ndash;&gt;
+                             <a href="javascript:void(0);" class="dropdown-item notify-item language py-2" data-lang="en"
+                                 title="English">
+                                 <img src="assets/images/flags/us.svg" alt="user-image" class="me-2 rounded" height="18">
+                                 <span class="align-middle">English</span>
+                             </a>
+
+                             &lt;!&ndash; item&ndash;&gt;
+                             <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp"
+                                 title="Spanish">
+                                 <img src="assets/images/flags/spain.svg" alt="user-image" class="me-2 rounded" height="18">
+                                 <span class="align-middle">Española</span>
+                             </a>
+
+                             &lt;!&ndash; item&ndash;&gt;
+                             <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr"
+                                 title="German">
+                                 <img src="assets/images/flags/germany.svg" alt="user-image" class="me-2 rounded"
+                                     height="18"> <span class="align-middle">Deutsche</span>
+                             </a>
+
+                             &lt;!&ndash; item&ndash;&gt;
+                             <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it"
+                                 title="Italian">
+                                 <img src="assets/images/flags/italy.svg" alt="user-image" class="me-2 rounded" height="18">
+                                 <span class="align-middle">Italiana</span>
+                             </a>
+
+                             &lt;!&ndash; item&ndash;&gt;
+                             <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru"
+                                 title="Russian">
+                                 <img src="assets/images/flags/russia.svg" alt="user-image" class="me-2 rounded" height="18">
+                                 <span class="align-middle">русский</span>
+                             </a>
+
+                             &lt;!&ndash; item&ndash;&gt;
+                             <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ch"
+                                 title="Chinese">
+                                 <img src="assets/images/flags/china.svg" alt="user-image" class="me-2 rounded" height="18">
+                                 <span class="align-middle">中国人</span>
+                             </a>
+
+                             &lt;!&ndash; item&ndash;&gt;
+                             <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="fr"
+                                 title="French">
+                                 <img src="assets/images/flags/french.svg" alt="user-image" class="me-2 rounded" height="18">
+                                 <span class="align-middle">français</span>
+                             </a>
+                         </div>
+                     </div>-->
+
+                    <!--<div class="dropdown topbar-head-dropdown ms-1 header-item">
+                        <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                            >
+                            <i class=' ri-question-line  fs-22'></i>
+                        </button>
+
+                    </div>
+                     <div class="dropdown topbar-head-dropdown ms-1 header-item" style="display: none !important">
+                        <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                            id="page-header-cart-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class='bx bx-shopping-bag fs-22'></i>
+                            <span
+                                class="position-absolute topbar-badge cartitem-badge fs-10 translate-middle badge rounded-pill bg-info">5</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end p-0 dropdown-menu-cart"
+                            aria-labelledby="page-header-cart-dropdown">
+
+                            <div data-simplebar style="max-height: 300px;">
+                                <div class="p-2">
+                                    <div class="text-center empty-cart" id="empty-cart">
+
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="p-3 border-bottom-0 border-start-0 border-end-0 border-dashed border"
+                                id="checkout-elem">
+                                <h5 class="m-0" id="cart-item-total">$1258.58</h5>
+                            </div>
+                        </div>
+                    </div>-->
+
+
+
+                    <div class="dropdown ms-sm-3 header-item topbar-user" >
+                        <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" id="user_picture" src="assets/images/users/user-dummy-img.jpg"
+                                 alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span id="user_name" class="d-none d-xl-inline-block ms-1 fw-medium user-name-text"></span>
+                                <span id="user_email" class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"></span>
+                            </span>
+                        </span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+
+                            <!--<a class="dropdown-item" href="account.html"><i
+                                    class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle">Аккаунт</span></a>-->
+                            <a class="dropdown-item" href="main.html"><i
+                                    class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle">Проекты</span></a>
+                            <a class="dropdown-item" target="_blank" href="https://mixar.biz/product/webar#rec482780471"><i
+                                    class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle">Поддержка</span></a>
+                            <a class="dropdown-item" href="javascript:logout()"><i
+                                    class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
+                                    class="align-middle" >Выход</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="main.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo.png" alt="" height="22">
+                    </span>
+                <span class="logo-lg">
+                        <img src="assets/images/logo.png" alt="" height="17">
+                    </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="main.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo.png" alt="" height="22">
+                    </span>
+                <span class="logo-lg">
+                        <img src="assets/images/logo.png" alt="" height="17">
+                    </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <div id="two-column-menu">
+                </div>
+                <!-- MAIN MENU-->
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span >Меню</span></li>
+                    <li class="nav-item">
+                        <a href="main.html" class="nav-link menu-link" role="button"
+                        >
+                            <i class="ri-home-3-line"></i> <span >Проекты</span>
+                        </a>
+
+                    </li>
+                    <li  class="nav-item">
+                        <a href="docs.html" class="nav-link menu-link active" role="button">
+                            <i class="ri-book-mark-line"></i> <span >Документация</span>
+                        </a>
+
+                    </li>
+                    <!--<li class="nav-item ">
+                        <a href="projects.html" class="nav-link menu-link " role="button"
+                            >
+                            <i class="ri-apps-2-line"></i> <span >Проекты</span>
+                        </a>
+
+                    </li>
+                    <li  class="nav-item">
+                        <a href="templates.html" class="nav-link menu-link" role="button"
+                            >
+                            <i class=" ri-rocket-2-line"></i> <span >Шаблоны</span>
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="analytics.html" class="nav-link menu-link" role="button"
+                            >
+                            <i class="ri-pie-chart-line"></i> <span >Аналитика</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                            <i class="ri-book-mark-line"></i> <span >Обучение</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarDashboards">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="tutorials.html" class="nav-link" > Уроки </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="news.html" class="nav-link" > Новости </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="slack.html" class="nav-link" > Slack Сообщество </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="support.html" class="nav-link" >Чат с поддержкой </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a  href="prices.html" class="nav-link menu-link" role="button"
+                            >
+                            <i class=" ri-coins-line"></i> <span >Тарифы</span>
+                        </a>
+
+                    </li>-->
+
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!--<div class="row">
+
+                    <div class="col-12">
+
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+
+                            <h4 class="mb-sm-0">Шаблоны</h4>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>-->
+                <!-- end row -->
+                <div class="row mb-3">
+                    <div class="col-xxl-3 ">
+                        <!--<div class="search-box mb-3">
+                            <input type="text" class="form-control" placeholder="Поиск...">
+                            <i class="ri-search-line search-icon"></i>
+                        </div>-->
+                        <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                            <a class="nav-link mb-2 active" id="functions-tab" data-bs-toggle="pill" href="#functions" role="tab" aria-controls="functions" aria-selected="true" >Описание функциональных характеристик</a>
+                            <a class="nav-link mb-2" id="installation-tab" data-bs-toggle="pill" href="#installation" role="tab" aria-controls="installation" aria-selected="false">Инструкция по установке </a>
+                            <a class="nav-link mb-2" id="exploitation-tab" data-bs-toggle="pill" href="#exploitation" role="tab" aria-controls="exploitation" aria-selected="false">Инструкция по эксплуатации </a>
+
+                        </div>
+                    </div>
+                    <div class="col-xxl-9  tab-content">
+                        <div class="tab-pane fade show active" id="functions" role="tabpanel" aria-labelledby="functions-tab">
+
+                            <iframe src="docs/functions5e1f.pdf?v=2" style="
+                                width: 100%;
+                                height: calc(100vh - 250px);
+                                background: #fff;
+                                border-radius: 10px;
+                            "></iframe>
+
+                        </div><!--end row-->
+
+                        <div class="tab-pane fade" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+
+                            <iframe src="docs/installation5e1f.pdf?v=2" style="
+                                width: 100%;
+                                height: calc(100vh - 250px);
+                                background: #fff;
+                                border-radius: 10px;
+                            "></iframe>
+
+                        </div><!--end row-->
+
+                        <div class="tab-pane fade" id="exploitation" role="tabpanel" aria-labelledby="exploitation-tab">
+
+                            <iframe src="docs/exploitation5e1f.pdf?v=2" style="
+                                width: 100%;
+                                height: calc(100vh - 250px);
+                                background: #fff;
+                                border-radius: 10px;
+                            "></iframe>
+
+                        </div><!--end row-->
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © MIXAR
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Все права защищены
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- container-fluid -->
+    </div>
+    <!-- End Page-content -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © MIXAR
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Все права защищены
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+<!-- removeProjectModal -->
+<div id="removeProjectModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="close-modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mt-2 text-center">
+                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop"
+                               colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                    <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                        <h4>Удалить проект?</h4>
+                        <p class="text-muted mx-4 mb-0">Вы уверены, что хотите удалить проект?</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                    <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn w-sm btn-danger" id="remove-project">Да, Удалить!</button>
+                </div>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<!--start back-to-top-->
+<button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+    <i class="ri-arrow-up-line"></i>
+</button>
+<!--end back-to-top-->
+
+
+<!-- JAVASCRIPT -->
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.min.js"></script>
+<script src="assets/libs/node-waves/waves.min.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+<script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+<script src="assets/js/plugins.js"></script>
+
+<!-- project list init -->
+<script src="assets/js/pages/project-list.init.js"></script>
+
+<!-- dropzone min -->
+<script src="assets/libs/dropzone/dropzone-min.js"></script>
+<!-- filepond js -->
+<script src="assets/libs/filepond/filepond.min.js"></script>
+<script src="../unpkg.com/filepond-plugin-file-validate-type%401.2.9/dist/filepond-plugin-file-validate-type.js"></script>
+<script src="assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js"></script>
+<script src="assets/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js"></script>
+<script src="assets/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js"></script>
+<script src="assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js"></script>
+
+<script src="assets/js/pages/form-file-upload.init.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+
+<script src="assets/js/auth.js"></script>
+<script>
+    load_user_info()
+</script>
+<script>
+    const ANCHOR_TYPES = {
+        MarkerHorizontal : 0,
+        MarkerVertical : 1,
+        PlaneHorizontal: 2,
+        PlaneVertical: 3,
+        CloudAnchor: 4
+    }
+    var scene = {"scenes":[{
+            "id": "scene1", "sceneSettings": {
+                "autoPlacement": false,
+                "capture": false,
+                "showTips": false,
+                "analytics": false,
+                "sceneScale": 0.00,
+                "hdrMapUrl": ""
+            },
+            anchors: [{"id": "1", "type": 3}],
+            "interactive": [],
+            "objects": []
+        }]
+    }
+    $(".project_type").on("click",function(){
+        var project_type = $(this).attr("id");
+        $(".project_type.selected").removeClass("selected");
+        $(this).addClass("selected");
+        $("#project_name_input").removeAttr("disabled")
+        if(project_type == "project_image_tracking"){
+            //alert(project_type)
+            $("#project_name_input").val("Проект с трекингом изображений")
+            $("#create_marker").css("display", "inline-block")
+            $("#create_plane_project").css("display","none")
+            $("#create_marker").removeAttr("disabled");
+        }
+        else {
+            //alert(project_type)
+            $("#create_marker").css("display","none")
+            $("#create_plane_project").css("display", "inline-block")
+            $("#create_plane_project").removeAttr("disabled");
+            if(project_type == "project_vertical_tracking")
+                $("#project_name_input").val("Проект с трекингом вертикальных плоскостей")
+            else {
+                if(project_type == "project_horizontal_tracking")
+                    $("#project_name_input").val("Проект с трекингом горизонтальных плоскостей")
+                else {
+                    $("#project_name_input").val("Проект с трекингом объектов")
+                    $("#create_plane_project").css("display","none")
+                    $("#create_object_project").css("display", "inline-block")
+                    $("#create_object_project").removeAttr("disabled");
+                }
+            }
+        }
+
+    })
+    $("#create_plane_project").on("click",function(){
+        var project_type = $(".project_type.selected").attr("id");
+        var type;
+        var img = "assets/images/projects/plane_h.jpg";
+        if(project_type == "project_horizontal_tracking") {
+            type = ANCHOR_TYPES.PlaneHorizontal;
+        }
+        else {
+            type = ANCHOR_TYPES.PlaneVertical;
+            img = "assets/images/projects/plane_v.jpg";
+        }
+        var name = $("#project_name_input").val();
+        make_anchor(0,type,function(anchors){
+            scene.scenes[0].anchors = anchors;
+            postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                '&description=description&visibility=0',
+                JSON.stringify(scene), {
+                    'Content-Type': 'application/json',
+                    "Authorization": "Bearer "+getCookie("token")
+                })
+                .then((res) => {
+                    console.log(res)
+                    createProject(res, name, img,function(hash){
+                        location.href="editor5445.html?id="+hash;
+                    })
+                });
+        });
+    })
+
+
+    $("#add_object_button").on("click",function(){
+        var type = ANCHOR_TYPES.CloudAnchor;
+        var name = $("#project_name_input").val();
+        make_anchor($("#object_id_input").val(),type,function(anchors){
+            scene.scenes[0].anchors = anchors;
+            postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                '&description=description&visibility=0',
+                JSON.stringify(scene), {
+                    'Content-Type': 'application/json',
+                    "Authorization": "Bearer "+getCookie("token")
+                })
+                .then((res) => {
+                    console.log(res)
+                    createProject(res, name, "assets/images/object_tracking.jpg",function(hash){
+                        location.href="editor5445.html?id="+hash;
+                    })
+                });
+        });
+    })
+
+    var object_id_input = document.getElementById("object_id_input");
+    object_id_input.addEventListener('input', function(element) {
+        this.value = parseInt(this.value);
+        if($("#object_id_input").val()!=0)
+            $("#add_object_button").removeAttr("disabled");
+        else
+            $("#add_object_button").attr("disabled",true);
+    })
+
+
+
+
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    FilePond.registerPlugin(FilePondPluginFileValidateType);
+    FilePond.registerPlugin(FilePondPluginFileValidateSize);
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+    async function getAsByteArray(file,callback) {
+        return new Uint8Array(await readFile(file))
+        //callback(new Uint8Array(await readFile(file));
+    }
+    function readFile(file) {
+        return new Promise((resolve, reject) => {
+            // Create file reader
+            let reader = new FileReader()
+
+            // Register event listeners
+            reader.addEventListener("loadend", e => resolve(e.target.result))
+            reader.addEventListener("error", reject)
+
+            // Read file
+            reader.readAsArrayBuffer(file)
+        })
+    }
+    async function postData(url = '', data = {}, _headers = {'Content-Type': 'application/octet-stream'}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: _headers,
+            redirect: 'follow', // manual, *follow, error
+            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: data
+        });
+        return response.json(); // parses JSON response into native JavaScript objects
+    }
+    var close_marker_button = $("#close_marker_button");
+    var add_marker_button = $("#add_marker_button");
+    var marker_name_input = $("#marker_name_input");
+    var marker_size_x_input = $("#marker_size_x_input");
+    var marker_size_y_input = $("#marker_size_y_input");
+    var marker_orientation_input = $("#marker_orientation_input");
+    var uploading_marker_asp_rat = 1.0;
+    var marker_pond = FilePond.create(document.querySelector('#uploadmarker'), {
+        acceptedFileTypes: ['image/png', 'image/jpeg'],
+        fileValidateTypeDetectType: (source, type) =>
+            new Promise((resolve, reject) => {
+                //alert(resolve)
+                // Do custom type detection here and return with promise
+
+                resolve(type);
+            })
+
+    });
+    marker_pond.on('addfile', (error,file) => {
+        if (error) {
+            console.log('Oh no');
+            return;
+        }
+        var filename =  marker_pond.getFile().filename;
+        console.log('File added',filename);
+        marker_name_input.removeAttr("disabled");
+        add_marker_button.removeAttr("disabled");
+        marker_size_x_input.removeAttr("disabled");
+        marker_size_y_input.removeAttr("disabled");
+        marker_orientation_input.removeAttr("disabled");
+        marker_name_input.val(filename);
+        var reader = new FileReader();
+        reader.readAsDataURL(marker_pond.getFile().file);
+        reader.onload = function (e) {
+
+            //Initiate the JavaScript Image object.
+            var image = new Image();
+
+            //Set the Base64 string return from FileReader as source.
+            image.src = e.target.result;
+
+            //Validate the File Height and Width.
+            image.onload = function () {
+                uploading_marker_asp_rat = 1.0*this.width/this.height;
+                marker_size_x_input.val("10.0");
+                marker_size_y_input.val(10.0/uploading_marker_asp_rat+"");
+
+            };
+        };
+    });
+    document.getElementById("marker_size_x_input").addEventListener("input",function(){
+        if(marker_size_x_input.val()!="" && parseFloat(marker_size_x_input.val())>0)
+            marker_size_y_input.val(parseFloat(marker_size_x_input.val())/uploading_marker_asp_rat);
+        else
+            marker_size_y_input.val("0.0");
+    });
+    document.getElementById("marker_size_y_input").addEventListener("input",function(){
+        if(marker_size_y_input.val()!="" && parseFloat(marker_size_y_input.val())>0)
+            marker_size_x_input.val(parseFloat(marker_size_y_input.val())*uploading_marker_asp_rat);
+        else
+            marker_size_x_input.val("0.0");
+    });
+    marker_size_x_input.on("blur",function(){
+        if(parseFloat(marker_size_x_input.val())<=0 || marker_size_x_input.val() == "") {
+            marker_size_x_input.val("10.0");
+            marker_size_y_input.val(10.0/uploading_marker_asp_rat+"");
+        }
+
+    })
+    marker_size_y_input.on("blur",function(){
+        if(parseFloat(marker_size_y_input.val())<=0 || marker_size_y_input.val() == "") {
+            marker_size_x_input.val("10.0");
+            marker_size_y_input.val(10.0/uploading_marker_asp_rat+"");
+        }
+
+    })
+    marker_pond.on('removefile',(error,file) => {
+        if (error) {
+            console.log('Oh no');
+            return;
+        }
+        marker_name_input.attr("disabled","");
+        add_marker_button.attr("disabled","");
+        marker_name_input.val("");
+        marker_size_x_input.attr("disabled","");
+        marker_size_y_input.attr("disabled","");
+        marker_size_x_input.val("");
+        marker_size_y_input.val("");
+        marker_orientation_input.attr("disabled","");
+    });
+
+    add_marker_button.on("click",async function(){
+        $("#markerModal .upload_area").css("display","none");
+        $("#markerModal .loading-bar").css("display","block");
+        marker_name_input.attr("disabled","");
+        add_marker_button.attr("disabled","");
+        const selectedFile = marker_pond.getFile().file;
+        const byteFile = await getAsByteArray(selectedFile);
+        postData('https://mixar-api.ru/asset?name='+encodeURI(marker_name_input.val())
+            +'&type=image&extension='+marker_pond.getFile().fileExtension, byteFile, {
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer "+getCookie("token")
+        })
+            .then((id) => {
+
+                var name = $("#project_name_input").val();
+                var type;
+                if(marker_orientation_input.val()=="Horizontal")
+                    type = ANCHOR_TYPES.MarkerHorizontal
+                else
+                    type = ANCHOR_TYPES.MarkerVertical
+                make_anchor(id,type,function(anchors){
+                    scene.scenes[0].anchors = anchors;
+                    postData('https://mixar-api.ru/project?name='+encodeURI(name)+
+                        '&description=description&visibility=0&ownerId=1',
+                        JSON.stringify(scene), {
+                            'Content-Type': 'application/json',
+                            "Authorization": "Bearer "+getCookie("token")
+                        })
+                        .then((res) => {
+                            //alert(JSON.stringify(res));
+                            createProject(res, name, "assets/images/image.html",function(hash){
+                                location.href="editor5445.html?id="+hash;
+                            })
+                        });
+                });
+                close_marker_button.click();
+                marker_name_input.val("");
+                $("#markerModal .upload_area").css("display","block");
+                $("#markerModal .loading-bar").css("display","none");
+                var pond_ids = [];
+                if (marker_pond.getFiles().length != 0) {  // "pond" is an object, created by FilePond.create
+                    marker_pond.getFiles().forEach(function(file) {
+                        pond_ids.push(file.id);
+                    });
+                }
+                marker_pond.removeFiles(pond_ids);
+                marker_name_input.attr("disabled","");
+                add_marker_button.attr("disabled","");
+            });
+
+    })
+    function make_anchor(contentId,type,callback) {
+        let anchors;
+        if(type==ANCHOR_TYPES.MarkerVertical || type==ANCHOR_TYPES.MarkerHorizontal)
+            anchors =
+                [{
+                    "id": "marker1", "type": type, "contentId": contentId,
+                    "markerWidth": parseFloat(marker_size_x_input.val())/100.0,
+                    "markerName": marker_name_input.val()
+                }]
+        if(type==ANCHOR_TYPES.PlaneVertical || type==ANCHOR_TYPES.PlaneHorizontal)
+            anchors =
+                [{
+                    "id": "1", "type": type
+                }]
+        if(type==ANCHOR_TYPES.CloudAnchor)
+            anchors =
+                [{
+                    "id": "cloudanchor1", "type": type,
+                    "cloudAnchorId": contentId,
+                    "contentId": contentId
+                }]
+        //   "contentId": 66, "markerWidth": 1, "markerName": "123"
+        callback(anchors)
+    }
+
+    function isString(x) {
+        return Object.prototype.toString.call(x) === "[object String]"
+    }
+
+
+    function registr_allownumericwithdecimal(obj){
+        $(obj).on("keypress keyup blur",function (event) {
+            if($(obj).hasClass("positive"))
+                $(this).val($(this).val().replace(/[^0-9\.]/g,''));
+            else
+                $(this).val($(this).val().replace(/[^0-9\.-]/g,''));
+            if($(this).val().indexOf('-') != -1)
+                $(this).val($(this).val().replace(/^.+-/,'-'));
+            //alert(event.which)
+            //- = 45 . = 190
+            if ((event.which != 46 || $(this).val().indexOf('.') != -1)
+                && (event.which < 48 || event.which > 57) && event.which !=45) {
+                event.preventDefault();
+            }
+            $(this).trigger("change");
+        });
+
+        $(obj).on("keypress",function (event) {
+            if (event.key === "Enter") {
+                if($(this).val() == "")
+                    $(this).val("0")
+            }
+        });
+        $(obj).on("blur",function (event) {
+
+            if($(this).val() == "" || $(this).val() == "-"){
+                if($(obj).hasClass("maybenull"))
+                    $(this).val("-")
+                else
+                    $(this).val("0")
+            }
+            $(this).trigger("change");
+        });
+        regist_input_selection(obj);
+    }
+    function regist_input_selection(obj){
+        $(obj).on("focus",function(){
+            $(this).select();
+        });
+    }
+    registr_allownumericwithdecimal($(".allownumericwithdecimal"));
+
+    function componentToHex(c) {
+        var hex = c.toString(16);
+        return hex.length == 1 ? "0" + hex : hex;
+    }
+    function rgbToHex(r, g, b) {
+        return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+    }
+    String.prototype.convertToRGB = function(){
+        if(this.length != 6){
+            throw "Only six-digit hex colors are allowed.";
+        }
+
+        var aRgbHex = this.match(/.{1,2}/g);
+        var aRgb = [
+            parseInt(aRgbHex[0], 16),
+            parseInt(aRgbHex[1], 16),
+            parseInt(aRgbHex[2], 16)
+        ];
+        return aRgb;
+    }
+    function createProject(project_id, title, image,callback) {
+        var token = getCookie("token"); // Получаем токен из cookie
+
+        $.ajax({
+            url: "server/addProject.php",
+            type: "POST",
+            data: {
+                token: token,
+                title: title,
+                image: image,
+                project_id: project_id
+            },
+            dataType: "json", // Указываем, что ожидаем ответ в формате JSON
+            success: function(response) {
+                // Проверяем результат выполнения
+                if (response.result === "success") {
+                    // Выводим сообщение об успешном создании проекта
+                    console.log("Project created successfully", response);
+                    callback(response.hash)
+                    //alert("Проект успешно создан. Hash: " + response.hash);
+                } else if (response.result === "error") {
+                    // Выводим сообщение об ошибке от сервера
+                    console.error("Error creating project", response.error);
+                    alert("Ошибка: " + response.error);
+                }
+            },
+            error: function(xhr, status, error) {
+                // Обработка ошибки запроса
+                console.error("Error creating project", error);
+                alert("Ошибка запроса: " + error);
+            }
+        });
+    }
+    function getProjects(callback) {
+        var token = getCookie("token"); // Получаем токен из cookie
+
+        $.ajax({
+            url: "server/getProjects.php",
+            type: "GET",
+            data: {
+                token: token
+            },
+            dataType: "json", // Указываем, что ожидаем ответ в формате JSON
+            success: function(response) {
+                // Проверяем результат выполнения
+                if (response.result === "success") {
+                    // Выводим сообщение об успешном создании проекта
+                    console.log("Projects got successfully", response);
+                    callback(response.projects)
+                    //alert("Проект успешно создан. Hash: " + response.hash);
+                } else if (response.result === "error") {
+                    // Выводим сообщение об ошибке от сервера
+                    console.error("Error got projects", response.error);
+                    alert("Ошибка: " + response.error);
+                }
+            },
+            error: function(xhr, status, error) {
+                // Обработка ошибки запроса
+                console.error("Error got projects", error);
+                alert("Ошибка запроса: " + error);
+            }
+        });
+    }
+    getProjects(function(projects){
+        projects.forEach(function(project){
+            $("#project_list").prepend("<div class=\"col-xxl-3 col-sm-6 project-card\">\n" +
+                "                            <div class=\"card \">\n" +
+                "                                <div class=\"card-body\">\n" +
+                "                                    <div class=\"p-3 mt-n3 mx-n3 bg-light rounded-top\" style=\"position: relative;padding: 0 !important;overflow: hidden;\">\n" +
+                "                                        \n" +
+                "                                        <a href=\"editor.html?id="+project.hash+"\" class=\"text-center pb-3\" style=\"padding: 0 !important;\">\n" +
+                "                                            <img src=\""+project.image+"\" alt=\"\" height=\"100\" style=\"width: 100%;height: auto;\">\n" +
+                "                                        </a>\n" +
+                "                                    </div>\n" +
+                "                                    <div class=\"py-3\" style=\"margin-bottom: 0px !important;\">\n" +
+                "                                        <h5 class=\"mb-3 fs-15\" style=\"margin-bottom: 0.25rem!important;\"><a href=\"editor.html?id="+project.hash+"\" class=\"text-dark\">"+project.title+"</a></h5><p class=\"text-muted mb-4\" style=\"margin: 0 !important;\">Изменено: Сегодня</p>\n" +
+                "                                        \n" +
+                "\n" +
+                "                                        \n" +
+                "                                    </div>\n" +
+                "                                    <div>\n" +
+                "                                        <div class=\"d-flex \">\n" +
+                "                                            <div class=\"flex-grow-1\">\n" +
+                "                                            </div>\n" +
+                "                                            <div class=\"flex-shrink-0\">\n" +
+                "                                                <div><div class=\"dropdown\">\n" +
+                "                                                <button class=\"btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n" +
+                "                                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-more-horizontal icon-sm\"><circle cx=\"12\" cy=\"12\" r=\"1\"></circle><circle cx=\"19\" cy=\"12\" r=\"1\"></circle><circle cx=\"5\" cy=\"12\" r=\"1\"></circle></svg>\n" +
+                "                                                </button>\n" +
+                "\n" +
+                "                                                <div class=\"dropdown-menu dropdown-menu-end\" style=\"\">\n" +
+                "                                                    \n" +
+                "                                                    <a class=\"dropdown-item\" href=\"javascript:delete_project("+project.hash+")\" data-bs-toggle=\"modal\" data-bs-target=\"#removeProjectModal\"><i class=\"ri-delete-bin-fill align-bottom me-2 text-muted\"></i>\n" +
+                "                                                        Удалить</a>\n" +
+                "                                                </div>\n" +
+                "                                            </div></div>\n" +
+                "                                            </div>\n" +
+                "                                        </div>\n" +
+                "                                    </div>\n" +
+                "\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                        </div>")
+        })
+    })
+
+
+</script>
+</body>
+
+
+<!-- Mirrored from editor.mix-ar.ru/docs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Oct 2025 15:56:44 GMT -->
+</html>
