@@ -12,7 +12,7 @@
   * Волк из "Ну погоди"
 
 Видео демонстрация работы:
-
+https://github.com/user-attachments/assets/69d2bde9-ff06-4480-93d5-64ecd8f87a96
 
 ## Стек
 
